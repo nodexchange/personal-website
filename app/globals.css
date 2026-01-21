@@ -1,26 +1,205 @@
 @import "tailwindcss";
+@import "tw-animate-css";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
+@custom-variant dark (&:is(.dark *));
 
 @theme inline {
+  /* Colors */
   --color-background: var(--background);
   --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-popover: var(--popover);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-destructive: var(--destructive);
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-ring: var(--ring);
+
+  /* Fonts */
+  --font-sans: var(--font-geist-sans), system-ui, sans-serif;
+  --font-mono: var(--font-geist-mono), monospace;
+  --font-display: var(--font-manrope), var(--font-geist-sans), system-ui, sans-serif;
+
+  /* Radius */
+  --radius-sm: calc(var(--radius) - 4px);
+  --radius-md: calc(var(--radius) - 2px);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) + 4px);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+/* Dark theme as default - matching reference site */
+:root {
+  --radius: 0.5rem;
+
+  /* Reference site colors (#0d0d0d dark theme) */
+  --background: #0d0d0d;
+  --foreground: #ededed;
+
+  --card: #1a1a1a;
+  --card-foreground: #ededed;
+
+  --popover: #1a1a1a;
+  --popover-foreground: #ededed;
+
+  --primary: #ffffff;
+  --primary-foreground: #0d0d0d;
+
+  --secondary: #1f1f1f;
+  --secondary-foreground: #ededed;
+
+  --muted: #1f1f1f;
+  --muted-foreground: #86868b;
+
+  --accent: #ffffff;
+  --accent-foreground: #0d0d0d;
+
+  --destructive: #ff4444;
+
+  --border: rgba(255, 255, 255, 0.1);
+  --input: rgba(255, 255, 255, 0.15);
+  --ring: rgba(255, 255, 255, 0.5);
+
+  /* Hero gradient colors */
+  --hero-gradient-start: #0f1d26;
+  --hero-gradient-end: #0d0d0d;
+}
+
+/* Light theme override (optional, for future) */
+.light {
+  --background: #ffffff;
+  --foreground: #1d1d1f;
+
+  --card: #f5f5f5;
+  --card-foreground: #1d1d1f;
+
+  --popover: #ffffff;
+  --popover-foreground: #1d1d1f;
+
+  --primary: #1d1d1f;
+  --primary-foreground: #ffffff;
+
+  --secondary: #f0f0f0;
+  --secondary-foreground: #1d1d1f;
+
+  --muted: #f5f5f5;
+  --muted-foreground: #86868b;
+
+  --accent: #1d1d1f;
+  --accent-foreground: #ffffff;
+
+  --destructive: #ff4444;
+
+  --border: rgba(0, 0, 0, 0.1);
+  --input: rgba(0, 0, 0, 0.1);
+  --ring: rgba(0, 0, 0, 0.5);
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply bg-background text-foreground antialiased;
+    font-feature-settings: "rlig" 1, "calt" 1;
+  }
+
+  /* Typography scale matching reference */
+  h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-display);
+    letter-spacing: -0.02em;
+    line-height: 1.2;
+  }
+
+  h1 {
+    font-size: clamp(2.625rem, 5vw + 1rem, 4.5rem);
+    font-weight: 700;
+  }
+
+  h2 {
+    font-size: clamp(2rem, 4vw + 0.5rem, 3rem);
+    font-weight: 600;
+  }
+
+  h3 {
+    font-size: clamp(1.5rem, 3vw + 0.25rem, 2rem);
+    font-weight: 600;
+  }
+
+  p {
+    line-height: 1.6;
+    letter-spacing: -0.01em;
+  }
+
+  a {
+    @apply text-primary transition-colors;
+  }
+
+  a:hover {
+    @apply text-primary/80;
   }
 }
 
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+/* Container utility matching reference (1200px max) */
+@layer utilities {
+  .container-site {
+    width: 100%;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+  }
+
+  @media (min-width: 768px) {
+    .container-site {
+      padding-left: 3rem;
+      padding-right: 3rem;
+    }
+  }
+
+  /* Section padding matching reference (72px) */
+  .section-padding {
+    padding-top: 4.5rem;
+    padding-bottom: 4.5rem;
+  }
+
+  @media (min-width: 768px) {
+    .section-padding {
+      padding-top: 4.5rem;
+      padding-bottom: 4.5rem;
+    }
+  }
+
+  /* Hero gradient background */
+  .hero-gradient {
+    background: radial-gradient(46% 50% at 50% 29.6%, #021c21 0%, #0d0d0d 100%);
+  }
+
+  /* Gentle spin animation for logo */
+  .animate-spin-slow {
+    animation: spin-slow 26s linear infinite;
+  }
+
+  @keyframes spin-slow {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
 }
