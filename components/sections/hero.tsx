@@ -52,27 +52,26 @@ export function Hero() {
         }}
       >
         <Container className="relative z-10 py-32">
-          <div className="max-w-3xl">
-            <p className="text-primary font-medium mb-4 tracking-wide">
-              Engineering Leadership
-            </p>
-
-            <h1 className="mb-6">
-              Building high-performing
+          <div className="max-w-3xl mt-5">
+            <h1 className="mb-6 text-[clamp(2.5rem,5vw+0.875rem,4.375rem)]">
+              Architecting{" "}
+              <span className="text-primary">high-performance</span>
               <br />
-              global teams with a
+              platforms that scale
               <br />
-              <span className="text-primary">quality-first</span> culture.
+              globally.
             </h1>
 
-            <p className="text-xl text-muted-foreground mb-8 max-w-xl leading-relaxed">
-              Quality Architect &bull; Global Teams &bull; Innovation Catalyst
+            <p className="text-lg text-muted-foreground mb-8 max-w-xl leading-relaxed">
+              Engineering Leadership &bull; Real-Time Systems &bull; Event-Driven Architecture &bull; Global Teams
             </p>
 
             <p className="text-lg text-muted-foreground mb-6 max-w-2xl">
-              Executive Director at JP Morgan Chase, leading UI Engineering and
-              Test & Automation across North America, EMEA, and APAC. 15+ years
-              driving engineering excellence at scale.
+              Executive Director at JP Morgan Chase, building multi-asset portfolio
+              management systems ($8B+ AUM) &mdash; from target allocation engines
+              (SAA/TAA) and quant-driven research feeds to alpha screening, portfolio
+              construction, and order execution. 15+ years delivering low-latency,
+              high-throughput platforms across global teams.
             </p>
 
             <p className="text-sm text-muted-foreground mb-10 max-w-2xl">
@@ -92,6 +91,11 @@ export function Hero() {
               </Button>
               <Button variant="secondary" size="lg" asChild>
                 <Link href="#contact">Get in touch</Link>
+              </Button>
+              <Button variant="outline" size="lg" asChild>
+                <a href="/marcin-wojtala-resume.pdf" download>
+                  Download Resume
+                </a>
               </Button>
             </div>
           </div>

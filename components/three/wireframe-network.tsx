@@ -4,6 +4,7 @@ import { useRef, useMemo } from "react";
 import { useFrame } from "@react-three/fiber";
 import { Line } from "@react-three/drei";
 import * as THREE from "three";
+import { useTheme } from "@/components/theme-provider";
 
 interface NodeData {
   id: number;
@@ -49,16 +50,22 @@ function generateNetwork(): NodeData[] {
     });
   });
 
-  // Add symmetrical cross-connections between outer nodes
-  nodes[1].connections.push(3, 5); // Right connects to Top and Front
-  nodes[2].connections.push(4, 6); // Left connects to Bottom and Back
-  nodes[3].connections.push(5);    // Top connects to Front
-  nodes[4].connections.push(6);    // Bottom connects to Back
+  // Add symmetrical octahedral cross-connections between outer nodes
+  // Each outer node connects to hub + 4 adjacent vertices (not the opposite vertex)
+  // This gives each outer node exactly 5 connections
+
+  // Node pairs that are opposite (should NOT connect):
+  // Right(1) <-> Left(2), Top(3) <-> Bottom(4), Front(5) <-> Back(6)
+
+  nodes[1].connections.push(3, 4, 5, 6); // Right connects to Top, Bottom, Front, Back
+  nodes[2].connections.push(3, 4, 5, 6); // Left connects to Top, Bottom, Front, Back
+  nodes[3].connections.push(5, 6);       // Top connects to Front, Back (1,2 already stored)
+  nodes[4].connections.push(5, 6);       // Bottom connects to Front, Back (1,2 already stored)
 
   return nodes;
 }
 
-function NodeSphere({ node }: { node: NodeData }) {
+function NodeSphere({ node, primaryColor }: { node: NodeData; primaryColor: string }) {
   const groupRef = useRef<THREE.Group>(null);
   const coreRef = useRef<THREE.Mesh>(null);
   const innerRef = useRef<THREE.Mesh>(null);
@@ -88,7 +95,7 @@ function NodeSphere({ node }: { node: NodeData }) {
       <mesh ref={coreRef} scale={node.size}>
         <icosahedronGeometry args={[1, 1]} />
         <meshBasicMaterial
-          color="#ffffff"
+          color={primaryColor}
           wireframe
           transparent
           opacity={node.isHub ? 0.9 : 0.7}
@@ -99,7 +106,7 @@ function NodeSphere({ node }: { node: NodeData }) {
       <mesh ref={innerRef} scale={node.size * 0.7}>
         <icosahedronGeometry args={[1, 0]} />
         <meshBasicMaterial
-          color="#ffffff"
+          color={primaryColor}
           transparent
           opacity={node.isHub ? 0.4 : 0.2}
         />
@@ -110,7 +117,7 @@ function NodeSphere({ node }: { node: NodeData }) {
         <mesh ref={glowRef} scale={node.size * 1.4}>
           <icosahedronGeometry args={[1, 1]} />
           <meshBasicMaterial
-            color="#60a5fa"
+            color="#3b82f6"
             wireframe
             transparent
             opacity={0.12}
@@ -123,6 +130,11 @@ function NodeSphere({ node }: { node: NodeData }) {
 
 export function WireframeNetwork() {
   const groupRef = useRef<THREE.Group>(null);
+  const { resolvedTheme } = useTheme();
+
+  // Theme-aware colors
+  const primaryColor = resolvedTheme === "light" ? "#1d1d1f" : "#ffffff";
+  const accentColor = "#3b82f6";
 
   // Generate network structure once
   const nodes = useMemo(() => generateNetwork(), []);
@@ -172,7 +184,7 @@ export function WireframeNetwork() {
             [edge[0].x, edge[0].y, edge[0].z],
             [edge[1].x, edge[1].y, edge[1].z],
           ]}
-          color="#ffffff"
+          color={primaryColor}
           lineWidth={1}
           transparent
           opacity={Math.min(edge[2], 0.5)}
@@ -187,7 +199,7 @@ export function WireframeNetwork() {
             [edge[0].x, edge[0].y, edge[0].z],
             [edge[1].x, edge[1].y, edge[1].z],
           ]}
-          color="#60a5fa"
+          color={accentColor}
           lineWidth={2}
           transparent
           opacity={0.15}
@@ -196,7 +208,7 @@ export function WireframeNetwork() {
 
       {/* Nodes */}
       {nodes.map((node) => (
-        <NodeSphere key={node.id} node={node} />
+        <NodeSphere key={node.id} node={node} primaryColor={primaryColor} />
       ))}
     </group>
   );

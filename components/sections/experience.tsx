@@ -12,52 +12,51 @@ const experiences = [
   {
     company: "JP Morgan & Chase",
     role: "Executive Director",
-    subtitle: "Global UI Engineering Lead & Head of Test & Automation",
+    subtitle: "Multi-Asset Portfolio Management Systems",
     period: "Dec 2022 - Present",
     location: "London",
     highlights: [
-      "Leading Assets & Wealth Management UI Engineering globally (NA, EMEA & APAC)",
-      "Managing distributed teams across US, UK, India, and APAC",
-      "Executive sponsorship for AI (Agentic development) and automation rollout",
-      "CTO representative for Test & Automation across global engineering",
+      "Building portfolio management platforms ($8B+ AUM): target allocation (SAA/TAA), alpha screening, exposure management, and order execution systems",
+      "Scaled 80B+ transaction architecture to multi-region with low-latency data replication",
+      "Partnering with quants and portfolio managers to translate investment strategies into performant systems",
+      "Leading global engineering teams across NA, EMEA, and APAC; driving AI/agentic tooling adoption",
     ],
   },
   {
     company: "Bottomline Technologies",
     role: "Senior UI Engineering Manager",
-    subtitle: "UI Development Leadership",
+    subtitle: "High-Throughput Financial Transactions",
     period: "May 2020 - Dec 2022",
     location: "Reading",
     highlights: [
-      "Built high-performing, remote, embedded UI engineering team from ground up",
-      "200% team growth in first 12 months",
-      "Supported 2B+ distributed transactions with seamless UX",
-      "Created technical vision and roadmap via contextual maturity matrix",
+      "Built engineering team from ground up; 200% growth in 12 months",
+      "Delivered platforms supporting 2B+ daily distributed transactions",
+      "Architected event-driven systems for real-time payment processing",
+      "Established technical vision via contextual maturity matrix",
     ],
   },
   {
     company: "Oxford University Press",
     role: "Application Architect / Dev Manager",
-    subtitle: "Higher Education Platform",
+    subtitle: "Platform Engineering & DevOps",
     period: "Apr 2019 - May 2020",
     location: "Oxford",
     highlights: [
-      "Hands-on development leadership for globally distributed team",
-      "Established security-conscious Ways of Working",
-      "Promoted container-driven DevOps and CI/CD maturity",
-      "Created nourishing culture encouraging innovation",
+      "Hands-on architecture leadership for globally distributed team",
+      "Implemented container-driven infrastructure (Docker, K8s) and CI/CD pipelines",
+      "Established security-first engineering practices and DevSecOps culture",
     ],
   },
   {
     company: "Verizon Media (AOL+Yahoo)",
     role: "Creative Solutions Manager",
-    subtitle: "AdTech & Creative Technology",
+    subtitle: "Real-Time AdTech Platforms",
     period: "Aug 2012 - Apr 2019",
     location: "London",
     highlights: [
-      "Managed globally distributed team (16+ developers)",
-      "Scaled creative technical solutions across AdTech landscape",
-      "7 years of leadership in high-pressure environment",
+      "Led 16+ globally distributed engineers delivering low-latency ad-serving systems",
+      "Scaled real-time bidding and creative delivery platforms",
+      "7 years building high-throughput systems under strict latency SLAs",
     ],
   },
 ];
@@ -75,16 +74,17 @@ export function Experience() {
 
           <FadeIn delay={0.1}>
             <h2 className="mb-4">
-              A track record of
+              Building mission-critical
               <br />
-              engineering excellence.
+              financial platforms.
             </h2>
           </FadeIn>
 
           <FadeIn delay={0.2}>
             <p className="text-muted-foreground max-w-2xl">
-              From senior developer to executive director, building and leading
-              high-performing teams across four continents.
+              From real-time ad-serving to multi-asset portfolio management &mdash;
+              15+ years delivering low-latency, high-throughput systems across
+              global teams.
             </p>
           </FadeIn>
         </div>

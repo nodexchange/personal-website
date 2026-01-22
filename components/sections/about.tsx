@@ -5,27 +5,27 @@ import { ExpertiseTags } from "@/components/ui/expertise-tags";
 
 const highlights = [
   {
-    stat: "15+",
-    label: "Years in Engineering Leadership",
+    stat: "$8B+",
+    label: "AUM in Portfolio Systems",
+  },
+  {
+    stat: "80B+",
+    label: "Daily Transactions Scaled",
   },
   {
     stat: "4",
     label: "Continents Managed",
   },
   {
-    stat: "2B+",
-    label: "Daily Transactions Supported",
-  },
-  {
-    stat: "200%",
-    label: "Team Growth in 12 Months",
+    stat: "15+",
+    label: "Years Engineering Leadership",
   },
 ];
 
 
 export function About() {
   return (
-    <section id="about" className="section-padding relative z-10 bg-background">
+    <section id="about" className="section-padding relative z-10 bg-grid-pattern shadow-sink">
       <Container>
         <div className="grid gap-12 lg:grid-cols-2 lg:gap-16 items-center">
           {/* Content */}
@@ -47,24 +47,27 @@ export function About() {
             <FadeIn delay={0.2}>
               <div className="space-y-4 text-muted-foreground">
                 <p>
-                  UK-based engineering leader who blends creative thinking with
-                  deep technical expertise. I bridge the gap between technical
-                  execution and business outcomes through engineering excellence,
-                  quality-first practices, and servant leadership.
+                  UK-based engineering leader specialising in portfolio management
+                  and investment systems. I bridge research, middle office, and
+                  technology &mdash; translating complex investment strategies into
+                  high-performance, low-latency platforms.
                 </p>
 
                 <p>
-                  My unique value comes from combining hands-on engineering
-                  expertise with investment and financial markets knowledge,
-                  creative industries management background, and deep
-                  specialisation in DevSecOps and quality engineering.
+                  Deep hands-on experience across the investment lifecycle:
+                  target allocation engines (SAA/TAA), research feeds, alpha
+                  screening, exposure management, portfolio construction, and
+                  order execution systems. Partnering directly with portfolio
+                  managers, research desks, and benchmark teams. Systems integrate
+                  with enterprise risk management frameworks.
                 </p>
 
                 <p>
-                  I specialise in chaos engineering, contract testing, and
-                  performance testing&mdash;areas where most engineering leaders
-                  lack depth. This enables me to build organisations where quality
-                  is everyone&apos;s responsibility, not an afterthought.
+                  Technical depth in event-driven architecture, distributed caching
+                  (GemFire, Ignite), multi-region database replication, and AWS
+                  infrastructure (EKS, Lambda, Bedrock). Infrastructure as Code with
+                  Terraform at the forefront. I build resilient systems through chaos
+                  engineering, contract testing, and performance testing at scale.
                 </p>
               </div>
             </FadeIn>

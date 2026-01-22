@@ -3,6 +3,7 @@
 import { useRef, useMemo } from "react";
 import { useFrame } from "@react-three/fiber";
 import * as THREE from "three";
+import { useTheme } from "@/components/theme-provider";
 
 interface StarFieldProps {
   count?: number;
@@ -11,6 +12,11 @@ interface StarFieldProps {
 
 export function StarField({ count = 200, radius = 15 }: StarFieldProps) {
   const pointsRef = useRef<THREE.Points>(null);
+  const { resolvedTheme } = useTheme();
+
+  // In light mode, use subtle gray dots; in dark mode, white stars
+  const starColor = resolvedTheme === "light" ? "#a0a0a0" : "#ffffff";
+  const starOpacity = resolvedTheme === "light" ? 0.3 : 0.6;
 
   const { positions, sizes } = useMemo(() => {
     const positions = new Float32Array(count * 3);
@@ -40,8 +46,9 @@ export function StarField({ count = 200, radius = 15 }: StarFieldProps) {
     const time = state.clock.elapsedTime;
     const material = pointsRef.current.material as THREE.PointsMaterial;
 
-    // Subtle opacity pulsing
-    material.opacity = 0.6 + Math.sin(time * 0.5) * 0.1;
+    // Subtle opacity pulsing - use theme-aware base opacity
+    const baseOpacity = resolvedTheme === "light" ? 0.3 : 0.6;
+    material.opacity = baseOpacity + Math.sin(time * 0.5) * 0.1;
   });
 
   const geometry = useMemo(() => {
@@ -54,10 +61,10 @@ export function StarField({ count = 200, radius = 15 }: StarFieldProps) {
   return (
     <points ref={pointsRef} geometry={geometry}>
       <pointsMaterial
-        color="#ffffff"
+        color={starColor}
         size={0.05}
         transparent
-        opacity={0.6}
+        opacity={starOpacity}
         sizeAttenuation
         depthWrite={false}
       />

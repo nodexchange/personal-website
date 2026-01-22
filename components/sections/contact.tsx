@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { Linkedin } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Container } from "@/components/layout/container";
 import { FadeIn } from "@/components/ui/fade-in";
@@ -36,14 +37,24 @@ export function Contact() {
               <Button size="lg" asChild>
                 <Link href="mailto:1985mars@gmail.com">Send an email</Link>
               </Button>
-              <Button variant="secondary" size="lg" asChild>
+              <Button
+                size="lg"
+                asChild
+                className="bg-[#0A66C2] hover:bg-[#004182] text-white"
+              >
                 <Link
                   href="https://www.linkedin.com/in/martinwojtala/"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
+                  <Linkedin className="w-4 h-4 mr-2" />
                   Connect on LinkedIn
                 </Link>
+              </Button>
+              <Button variant="outline" size="lg" asChild>
+                <a href="/marcin-wojtala-resume.pdf" download>
+                  Download Resume
+                </a>
               </Button>
             </div>
           </FadeIn>

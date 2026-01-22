@@ -5,6 +5,7 @@ import Link from "next/link";
 import { cn } from "@/lib/utils";
 import { Container } from "./container";
 import { NetworkLogo } from "@/components/ui/network-logo";
+import { ThemeToggle } from "@/components/ui/theme-toggle";
 
 const navItems = [
   { href: "/#about", label: "About" },
@@ -12,6 +13,7 @@ const navItems = [
   { href: "/mentorship", label: "Mentorship" },
   { href: "/speaking", label: "Speaking" },
   { href: "/workshops", label: "Workshops" },
+  { href: "/stack", label: "Stack" },
 ];
 
 const featuredNav = {
@@ -82,16 +84,21 @@ export function Header() {
             {/* Featured: Agentic Playbook */}
             <Link
               href={featuredNav.href}
-              className="text-sm font-medium px-4 py-2 rounded-full bg-white text-[#1d1d1f] border border-[#1d1d1f]/20 hover:bg-white/90 hover:scale-[1.02] active:scale-[0.98] transition-all duration-200"
+              className="text-sm font-medium px-4 py-2 rounded-full bg-[var(--featured-bg)] text-[var(--featured-text)] border border-[var(--featured-border)] hover:opacity-90 hover:scale-[1.02] active:scale-[0.98] transition-all duration-200"
             >
               {featuredNav.label}
             </Link>
+
+            {/* Theme toggle */}
+            <ThemeToggle />
           </nav>
 
-          {/* Mobile hamburger button */}
-          <button
-            type="button"
-            className="md:hidden relative w-10 h-10 flex items-center justify-center"
+          {/* Mobile theme toggle + hamburger */}
+          <div className="md:hidden flex items-center gap-2">
+            <ThemeToggle />
+            <button
+              type="button"
+              className="relative w-10 h-10 flex items-center justify-center"
             onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
             aria-label={isMobileMenuOpen ? "Close menu" : "Open menu"}
             aria-expanded={isMobileMenuOpen}
@@ -116,7 +123,8 @@ export function Header() {
                 )}
               />
             </div>
-          </button>
+            </button>
+          </div>
         </Container>
       </header>
 
@@ -161,7 +169,7 @@ export function Header() {
             href={featuredNav.href}
             onClick={handleLinkClick}
             className={cn(
-              "text-2xl font-semibold px-6 py-3 rounded-full bg-white text-[#1d1d1f] border border-[#1d1d1f]/20 transition-all duration-300",
+              "text-2xl font-semibold px-6 py-3 rounded-full bg-[var(--featured-bg)] text-[var(--featured-text)] border border-[var(--featured-border)] transition-all duration-300",
               isMobileMenuOpen
                 ? "opacity-100 translate-y-0"
                 : "opacity-0 translate-y-4",
