@@ -11,7 +11,7 @@ import {
 } from "@/components/ui/card";
 
 export const metadata = {
-  title: "The Agentic Playbook | Marcin Wojtala",
+  title: "The Agentic Playbook | Martin Wojtala",
   description:
     "Insights on AI orchestration, agentic development, and the future of software engineering in the age of AI.",
 };
@@ -308,7 +308,7 @@ export default function AgenticPlaybookPage() {
                   <p>
                     The Agentic Playbook started as an exploration of how AI
                     tools like Cursor, Claude, and Copilot are changing the way
-                    engineering teams work. As Executive Director at JP Morgan
+                    engineering teams work. As Executive Director at JPMorgan Chase
                     with executive sponsorship for AI and automation rollout, I
                     have a front-row seat to this transformation.
                   </p>

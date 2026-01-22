@@ -10,14 +10,14 @@ import { FadeIn } from "@/components/ui/fade-in";
 
 const experiences = [
   {
-    company: "JP Morgan & Chase",
+    company: "JPMorgan Chase",
     role: "Executive Director",
     subtitle: "Multi-Asset Portfolio Management Systems",
     period: "Dec 2022 - Present",
     location: "London",
     highlights: [
-      "Building portfolio management platforms ($8B+ AUM): target allocation (SAA/TAA), alpha screening, exposure management, and order execution systems",
-      "Scaled 80B+ transaction architecture to multi-region with low-latency data replication",
+      "Building portfolio management platforms ($438B+ AUM): target allocation (SAA/TAA), alpha screening, exposure management, and order execution systems",
+      "Scaled 8B+ daily message architecture to multi-region with low-latency data replication",
       "Partnering with quants and portfolio managers to translate investment strategies into performant systems",
       "Leading global engineering teams across NA, EMEA, and APAC; driving AI/agentic tooling adoption",
     ],

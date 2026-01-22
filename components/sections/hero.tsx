@@ -51,9 +51,9 @@ export function Hero() {
           opacity,
         }}
       >
-        <Container className="relative z-10 py-32">
-          <div className="max-w-3xl mt-5">
-            <h1 className="mb-6 text-[clamp(2.5rem,5vw+0.875rem,4.375rem)]">
+        <Container className="relative z-10 pt-24 pb-16">
+          <div className="max-w-3xl">
+            <h1 className="mb-4 text-[clamp(2.25rem,4vw+0.875rem,3.75rem)]">
               Architecting{" "}
               <span className="text-primary">high-performance</span>
               <br />
@@ -62,19 +62,19 @@ export function Hero() {
               globally.
             </h1>
 
-            <p className="text-lg text-muted-foreground mb-8 max-w-xl leading-relaxed">
+            <p className="text-base text-muted-foreground mb-5 max-w-xl leading-relaxed">
               Engineering Leadership &bull; Real-Time Systems &bull; Event-Driven Architecture &bull; Global Teams
             </p>
 
-            <p className="text-lg text-muted-foreground mb-6 max-w-2xl">
-              Executive Director at JP Morgan Chase, building multi-asset portfolio
-              management systems ($8B+ AUM) &mdash; from target allocation engines
+            <p className="text-base text-muted-foreground mb-4 max-w-2xl">
+              Executive Director at JPMorgan Chase, building multi-asset portfolio
+              management systems ($438B+ AUM) &mdash; from target allocation engines
               (SAA/TAA) and quant-driven research feeds to alpha screening, portfolio
               construction, and order execution. 15+ years delivering low-latency,
               high-throughput platforms across global teams.
             </p>
 
-            <p className="text-sm text-muted-foreground mb-10 max-w-2xl">
+            <p className="text-sm text-muted-foreground mb-6 max-w-2xl">
               Currently writing{" "}
               <Link
                 href="/agentic-playbook"
@@ -93,7 +93,7 @@ export function Hero() {
                 <Link href="#contact">Get in touch</Link>
               </Button>
               <Button variant="outline" size="lg" asChild>
-                <a href="/marcin-wojtala-resume.pdf" download>
+                <a href="/martin-wojtala-resume.pdf" download>
                   Download Resume
                 </a>
               </Button>

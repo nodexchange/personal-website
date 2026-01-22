@@ -25,13 +25,13 @@ export function Footer() {
           <div className="flex items-center gap-3">
             <Image
               src="/16758689.png"
-              alt="Marcin Wojtala"
+              alt="Martin Wojtala"
               width={32}
               height={32}
               className="rounded-full"
             />
             <p className="text-sm text-muted-foreground">
-              &copy; {new Date().getFullYear()} Marcin Wojtala. All rights reserved.
+              &copy; {new Date().getFullYear()} Martin Wojtala. All rights reserved.
             </p>
           </div>
 

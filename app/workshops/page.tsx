@@ -12,7 +12,7 @@ import {
 } from "@/components/ui/card";
 
 export const metadata = {
-  title: "Workshops | Marcin Wojtala",
+  title: "Workshops | Martin Wojtala",
   description:
     "Hands-on workshops on engineering leadership, quality engineering, chaos engineering, and team building.",
 };

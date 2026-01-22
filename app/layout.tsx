@@ -20,7 +20,7 @@ const manrope = Manrope({
 });
 
 export const metadata: Metadata = {
-  title: "Marcin Wojtala | Engineering Leader",
+  title: "Martin Wojtala | Engineering Leader",
   description:
     "Engineering Leader, Quality Architect, and Innovation Catalyst. Building high-performing global teams with a quality-first culture.",
   keywords: [
@@ -32,19 +32,19 @@ export const metadata: Metadata = {
     "Agentic Development",
     "Global Teams",
   ],
-  authors: [{ name: "Marcin Wojtala" }],
+  authors: [{ name: "Martin Wojtala" }],
   metadataBase: new URL("https://marcinwojtala.com"),
   openGraph: {
-    title: "Marcin Wojtala | Engineering Leader",
+    title: "Martin Wojtala | Engineering Leader",
     description:
       "Engineering Leader, Quality Architect, and Innovation Catalyst. Building high-performing global teams with a quality-first culture.",
     type: "website",
-    siteName: "Marcin Wojtala",
+    siteName: "Martin Wojtala",
     locale: "en_GB",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Marcin Wojtala | Engineering Leader",
+    title: "Martin Wojtala | Engineering Leader",
     description:
       "Engineering Leader, Quality Architect, and Innovation Catalyst. Building high-performing global teams with a quality-first culture.",
   },

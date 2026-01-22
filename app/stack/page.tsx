@@ -9,7 +9,7 @@ import {
 } from "@/components/ui/card";
 
 export const metadata = {
-  title: "Stack | Marcin Wojtala",
+  title: "Stack | Martin Wojtala",
   description:
     "Enterprise technologies for building high-performance, low-latency financial platforms at scale.",
 };

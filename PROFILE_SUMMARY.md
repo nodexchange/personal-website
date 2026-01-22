@@ -1,4 +1,4 @@
-# Marcin Wojtala - Professional Profile Summary
+# Martin Wojtala - Professional Profile Summary
 
 *Compiled: January 17, 2026*
 
@@ -27,7 +27,7 @@ UK-based, hands-on engineering leader who **blends creative thinking with deep t
 ## 💼 Current Role
 
 **Executive Director – Global UI Engineering Lead & Head of Test & Automation**
-*JP Morgan & Chase | London | December 2022 - Present*
+*JPMorgan Chase | London | December 2022 - Present*
 
 ### Scope & Responsibilities
 - **Global Leadership**: Assets & Wealth Management UI Engineering (NA, EMEA & APAC)
@@ -96,13 +96,13 @@ UK-based, hands-on engineering leader who **blends creative thinking with deep t
 2. **MSc Creative Industries Management, Merit** (2015-2016) - Birkbeck, University of London
    - Bridges creative thinking with business strategy
 
-3. **PG Certificate, Digital Media Management** (2009-2010) - London
+3. **PG Certificate, Digital Media Management** (2009-2010) - Birkbeck, University of London
 
-4. **BA (Hons) Design for Interactive Media Specialist** (2004-2007) - London
+4. **BA (Hons) Design for Interactive Media Specialist** (2004-2007) - University of West London
    - Foundation in interaction design and user experience
 
 ### Professional Development
-- **AWS Cloud Certification** (mentioned in overview)
+- **AWS Certified Cloud Practitioner** (2024) - Amazon Web Services
 
 ---
 
