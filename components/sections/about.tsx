@@ -99,7 +99,7 @@ export function About() {
             <div className="relative aspect-square lg:aspect-[4/5] rounded-lg overflow-hidden bg-muted">
               <Image
                 src="/headshot.webp"
-                alt="Martin Wojtala"
+                alt="Marcin Wojtala"
                 fill
                 className="object-cover"
               />

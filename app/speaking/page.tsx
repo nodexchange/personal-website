@@ -12,7 +12,7 @@ import {
 } from "@/components/ui/card";
 
 export const metadata = {
-  title: "Public Speaking | Martin Wojtala",
+  title: "Public Speaking | Marcin Wojtala",
   description:
     "Conference talks, workshops, and keynotes on engineering leadership, quality engineering, and team building.",
 };

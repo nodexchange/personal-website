@@ -1,4 +1,4 @@
-# Martin Wojtala - Professional Profile Summary
+# Marcin Wojtala - Professional Profile Summary
 
 *Compiled: January 17, 2026*
 

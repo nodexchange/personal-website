@@ -1,16 +1,30 @@
-# MARTIN WOJTALA
-
-**Engineering Leader | Portfolio Management Systems | High-Performance Platforms**
-
-London, UK | (+44) 7500905701 | 1985mars@gmail.com | [LinkedIn](https://linkedin.com/in/martinwojtala) | [Website](https://mw-personal-website.vercel.app/) | [GitHub](https://github.com/nodexchange)
+<div style="display: flex; justify-content: space-between; align-items: flex-end; gap: 12px;">
+  <div style="flex: 1;">
+    <h1 style="margin: 0;">MARCIN WOJTALA</h1>
+    <div style="font-size: 0.86em;"><strong>Engineering Leader | Application Strategy &amp; Architecture | Digital Transformation</strong></div>
+  </div>
+  <div style="text-align: right; font-size: 0.9em;">
+    London, UK | (+44) 7500905701<br/>
+    <a href="mailto:1985mars@gmail.com">Email</a> |
+    <a href="https://linkedin.com/in/martinwojtala">LinkedIn</a> |
+    <a href="https://marcinwojtala.vercel.app/">Website</a> |
+    <a href="https://github.com/nodexchange">GitHub</a>
+  </div>
+</div>
 
 ---
 
 ## SUMMARY
 
-Engineering leader with 15+ years delivering high-performance, low-latency platforms for financial services. Currently building multi-asset portfolio management systems ($438B+ AUM) at JPMorgan Chase, scaling 8B+ daily transaction architecture to multi-region with sub-millisecond data replication. Deep expertise partnering with portfolio managers, research desks, and middle office teams to translate investment strategies into resilient, real-time trading infrastructure.
+Engineering leader with 15+ years delivering high-performance platforms for financial services, spanning application strategy, architecture, and global delivery. Currently leading multi-asset portfolio management systems ($438B+ AUM) at JPMorgan Chase, scaling 8B+ daily transactions with multi-region resilience.
 
-**Core Expertise:** Front-Office Systems | Low-Latency Platforms | Portfolio Management | Real-Time Data | Event-Driven Architecture | Global Team Leadership | Quality Driven Development | Agile Software Delivery | Resiliency | Scalability
+**Leadership Highlights:**
+- Application strategy and governance with board-level KPI and risk reporting
+- 99.42% SLA uptime across global trading hours through resilience-by-design
+- AI-augmented delivery: 42% cycle time reduction, 63% throughput increase; 6 workshops, 89% team trained
+- Post-M&A integration under sanctions constraints; relocated 15 engineers and families to ensure safety and continuity
+
+**Core Expertise:** Application Strategy | Service Management (ITIL) | Resilience & Security | Integration & Rationalisation | Global Team Leadership | DevSecOps | Agile Delivery
 
 ---
 
@@ -18,15 +32,11 @@ Engineering leader with 15+ years delivering high-performance, low-latency platf
 
 **Languages & Frameworks:** Java, Spring Boot, Maven | C#, .NET | TypeScript, React, Next.js | Python | Node.js
 
-**Distributed Systems & Caching:** GemFire Cache, Apache Ignite, Redis | Kafka, Event-Driven Architecture | Multi-Region Database Replication
+**Architecture & Data:** Event-Driven Architecture, Kafka | Microservices, CQRS | GemFire, Ignite, Redis | Multi-Region Replication
 
-**Cloud & Infrastructure:** AWS (EKS, Lambda, EC2, Lightsail, Beanstalk, Bedrock) | Kubernetes, Docker | Terraform (Infrastructure as Code)
+**Cloud & Platform:** AWS (EKS, Lambda, EC2, Bedrock) | Kubernetes, Docker | Terraform (IaC)
 
-**APIs & Architecture:** REST, GraphQL | Microservices | Monolith-to-Microservices Migrations | CQRS, Event Sourcing
-
-**CI/CD & DevOps:** Jenkins, GitHub Actions, GitLab CI | Automated Pipelines | Blue-Green Deployments
-
-**Security & Quality:** Snyk, SonarQube, Veracode | PactFlow (Contract Testing) | BlazeMeter, k6 (Performance Testing) | Chaos Engineering
+**Delivery & Quality:** CI/CD (Jenkins, GitHub Actions, GitLab CI) | Snyk, SonarQube, Veracode | PactFlow, k6 | Chaos Engineering
 
 ---
 
@@ -40,15 +50,13 @@ Leading engineering for multi-asset portfolio management platforms serving $438B
 
 - **Portfolio Systems:** Building target allocation engines (SAA/TAA), research feeds integration, alpha screening, exposure management, portfolio construction, and order execution systems
 - **Scale & Performance:** Scaled 8B+ daily transaction architecture to multi-region with low-latency data replication using GemFire and distributed caching
-- **Stakeholder Partnership:** Partnering directly with portfolio managers, research desks, and benchmark teams; systems integrate with enterprise risk management frameworks
+- **Resilience & MTTR:** Delivered 99.42% SLA uptime across global trading hours; reduced MTTR via streamlined CI/CD and instant rollback (Spinnaker, Kubernetes)
+- **Service Management:** ITIL-aligned delivery with ServiceNow migration, incident/Problem/change governance, and clear escalation paths
+- **AI & Innovation:** Executive sponsorship for AI-assisted delivery; productivity and risk tracking for AI-enabled teams
 - **Global Leadership:** Managing distributed engineering teams across US, UK, India, and APAC; driving architectural standards and engineering excellence
-- **AI & Innovation:** Executive sponsorship for AI/agentic development adoption and automation initiatives
-- **Quality & Resilience:** CTO representative for Test & Automation; established chaos engineering, contract testing, and performance testing practices
-- **DevSecOps:** Championing CI/CD modernisation with Terraform IaC, security tooling integration (Snyk, SonarQube, Veracode), and automated pipelines
+- **Quality & DevSecOps:** Established chaos engineering, contract testing, and performance testing practices with security tooling integration
 
 **Technologies:** Java, Spring Boot, React, TypeScript, AWS (EKS, Lambda), GemFire, Kafka, Terraform, Jenkins, PactFlow
-
-<div style="page-break-before: always;"></div>
 
 ### Bottomline Technologies | Reading
 **Senior Engineering Manager – High-Throughput Financial Transactions**
@@ -109,4 +117,3 @@ Led globally distributed engineering team (16+ developers) building ad creative 
 - **Cloud & Infrastructure:** AWS architecture patterns, Kubernetes administration, Terraform workflows
 - **Security & Accessibility:** DevSecOps practices, OWASP security principles, WCAG accessibility standards, inclusive design
 - **Financial Services:** Investment principles, portfolio management fundamentals, risk frameworks
-

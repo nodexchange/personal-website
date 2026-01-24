@@ -66,7 +66,7 @@ export function Header() {
             className="flex items-center gap-2 text-lg font-semibold text-foreground hover:text-foreground/80 transition-colors"
           >
             <NetworkLogo size={28} />
-            Martin Wojtala
+            Marcin Wojtala
           </Link>
 
           {/* Desktop navigation */}

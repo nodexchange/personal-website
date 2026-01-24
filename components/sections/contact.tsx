@@ -52,7 +52,7 @@ export function Contact() {
                 </Link>
               </Button>
               <Button variant="outline" size="lg" asChild>
-                <a href="/martin-wojtala-resume.pdf" download>
+                <a href="/marcin-wojtala-resume.pdf" download>
                   Download Resume
                 </a>
               </Button>

@@ -2,7 +2,7 @@ import { ImageResponse } from "next/og";
 
 export const runtime = "edge";
 
-export const alt = "Martin Wojtala - Engineering Leader";
+export const alt = "Marcin Wojtala - Engineering Leader";
 export const size = {
   width: 1200,
   height: 600,
@@ -50,7 +50,7 @@ export default async function Image() {
               fontFamily: "system-ui",
             }}
           >
-            marcinwojtala.com
+            marcinwojtala.vercel.app
           </span>
         </div>
 
@@ -83,7 +83,7 @@ export default async function Image() {
               margin: 0,
             }}
           >
-            Martin Wojtala
+            Marcin Wojtala
           </h1>
           <p
             style={{

@@ -2,7 +2,7 @@ import { ImageResponse } from "next/og";
 
 export const runtime = "edge";
 
-export const alt = "The Agentic Playbook - Martin Wojtala";
+export const alt = "The Agentic Playbook - Marcin Wojtala";
 export const size = {
   width: 1200,
   height: 630,
@@ -68,7 +68,7 @@ export default async function Image() {
               fontFamily: "system-ui",
             }}
           >
-            by Martin Wojtala
+            by Marcin Wojtala
           </span>
         </div>
 

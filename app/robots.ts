@@ -6,6 +6,6 @@ export default function robots(): MetadataRoute.Robots {
       userAgent: "*",
       allow: "/",
     },
-    sitemap: "https://marcinwojtala.com/sitemap.xml",
+    sitemap: "https://marcinwojtala.vercel.app/sitemap.xml",
   };
 }

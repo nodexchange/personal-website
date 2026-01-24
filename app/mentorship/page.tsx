@@ -12,7 +12,7 @@ import {
 } from "@/components/ui/card";
 
 export const metadata = {
-  title: "Mentorship | Martin Wojtala",
+  title: "Mentorship | Marcin Wojtala",
   description:
     "Engineering mentorship and career guidance for developers and leaders looking to grow.",
 };
@@ -67,7 +67,7 @@ const mentorshipAreas = [
 const testimonials = [
   {
     quote:
-      "Martin's guidance helped me transition from senior developer to engineering manager. His practical advice on team dynamics was invaluable.",
+      "Marcin's guidance helped me transition from senior developer to engineering manager. His practical advice on team dynamics was invaluable.",
     author: "Senior Engineering Manager",
     company: "FinTech Startup",
   },

@@ -11,12 +11,23 @@ import {
 } from "@/components/ui/card";
 
 export const metadata = {
-  title: "The Agentic Playbook | Martin Wojtala",
+  title: "The Agentic Playbook | Marcin Wojtala",
   description:
     "Insights on AI orchestration, agentic development, and the future of software engineering in the age of AI.",
 };
 
 const playbookEntries = [
+  {
+    number: "12",
+    title: "Why Skills Outlive Models",
+    subtitle: "From Prompt Engineering to Reusable Agent Capabilities",
+    summary:
+      "While AI models constantly evolve, the lasting competitive advantage lies in developing structured 'Agent Skills'—reusable capability modules that embed domain knowledge, best practices, and organizational standards. A shift from temporary prompting toward reproducible, scalable engineering judgment.",
+    tags: ["Agent Skills", "Architecture", "Engineering Leadership"],
+    url: "https://www.linkedin.com/pulse/agentic-playbook-12-why-skills-outlive-models-marcin-wojtala-nzb0e",
+    type: "article",
+    isNew: true,
+  },
   {
     number: "11",
     title: "Cutting the Roots",
@@ -54,7 +65,7 @@ const playbookEntries = [
     summary:
       "Addresses the limitation of single-agent sequential operation. Using Claude-Squad for concurrent multi-agent execution where developers can spin up multiple agents with defined scopes running in parallel.",
     tags: ["Multi-Agent", "Parallel Execution", "Claude-Squad"],
-    url: "https://www.linkedin.com/posts/martinwojtala_claudesquad-multiagentflow-agenticplaybook-activity-7339195778516574209-Xz2d",
+    url: "https://www.linkedin.com/posts/marcinwojtala_claudesquad-multiagentflow-agenticplaybook-activity-7339195778516574209-Xz2d",
     type: "post",
   },
   {
@@ -64,7 +75,7 @@ const playbookEntries = [
     summary:
       "Combining Claude 4's reasoning with Playwright's visual testing to enable AI agents to validate UI changes during refactoring. Automates screenshot capture and comparison to detect regressions.",
     tags: ["Visual Testing", "Playwright", "Refactoring"],
-    url: "https://www.linkedin.com/posts/martinwojtala_agenticplaybook-claude4-cursorai-activity-7336301655321202690-ejzA",
+    url: "https://www.linkedin.com/posts/marcinwojtala_agenticplaybook-claude4-cursorai-activity-7336301655321202690-ejzA",
     type: "post",
   },
   {
@@ -74,7 +85,7 @@ const playbookEntries = [
     summary:
       "How Claude 4 transforms refactoring through incremental, test-driven improvements. AI's real value lies in guiding intelligent architectural adjustments while maintaining safety through comprehensive testing.",
     tags: ["Refactoring", "TDD", "Claude 4"],
-    url: "https://www.linkedin.com/posts/martinwojtala_agenticplaybook-claude4-cursorai-activity-7333710107937038336-dvYA",
+    url: "https://www.linkedin.com/posts/marcinwojtala_agenticplaybook-claude4-cursorai-activity-7333710107937038336-dvYA",
     type: "post",
   },
   {
@@ -84,7 +95,7 @@ const playbookEntries = [
     summary:
       "Before requesting code generation, ask AI to challenge your design decisions, identify edge cases, and suggest alternatives. Making 'Celestial Crosscheck, please' a habitual first prompt.",
     tags: ["Architecture", "Design Review", "Best Practices"],
-    url: "https://www.linkedin.com/posts/martinwojtala_agenticplaybook-celestialcrosscheck-aiindev-activity-7330659845018185729-NJC5",
+    url: "https://www.linkedin.com/posts/marcinwojtala_agenticplaybook-celestialcrosscheck-aiindev-activity-7330659845018185729-NJC5",
     type: "post",
   },
   {
@@ -94,7 +105,7 @@ const playbookEntries = [
     summary:
       "Navigating a large project without visual context is like sailing in the dark. Provide screenshots, wireframes, and architecture diagrams to help AI agents better understand structure and intent.",
     tags: ["Visual Input", "Context", "Productivity"],
-    url: "https://www.linkedin.com/posts/martinwojtala_agenticplaybook-aiindev-machinevision-activity-7328170976880332800-Afvg",
+    url: "https://www.linkedin.com/posts/marcinwojtala_agenticplaybook-aiindev-machinevision-activity-7328170976880332800-Afvg",
     type: "post",
   },
   {
@@ -114,7 +125,7 @@ const playbookEntries = [
     summary:
       "Using Cursor AI to learn Java by contextualizing instruction within an existing TypeScript monorepo. The agent teaches through contrasts, creating a personalised, hands-on learning path anchored in real experience.",
     tags: ["Learning", "Language Migration", "Cursor AI"],
-    url: "https://www.linkedin.com/posts/martinwojtala_agenticplaybook-aiindev-cursorai-activity-7320516588749639682-59S3",
+    url: "https://www.linkedin.com/posts/marcinwojtala_agenticplaybook-aiindev-cursorai-activity-7320516588749639682-59S3",
     type: "post",
   },
   {
@@ -124,7 +135,7 @@ const playbookEntries = [
     summary:
       "Advocates for breaking work into structured stages with verification points rather than requesting complete solutions in single prompts. Reduces hallucinations and code breakage through collaboration over speed.",
     tags: ["Methodology", "Best Practices", "Quality"],
-    url: "https://www.linkedin.com/posts/martinwojtala_agenticplaybook-aiindev-agentops-activity-7317923860861906944-s3lr",
+    url: "https://www.linkedin.com/posts/marcinwojtala_agenticplaybook-aiindev-agentops-activity-7317923860861906944-s3lr",
     type: "post",
   },
 ];
@@ -251,7 +262,7 @@ export default function AgenticPlaybookPage() {
                     rel="noopener noreferrer"
                     className="block group"
                   >
-                    <Card className="border-border/50 h-full transition-all duration-200 group-hover:border-primary/30 group-hover:bg-card/80">
+                    <Card className={`h-full transition-all duration-200 group-hover:border-primary/30 group-hover:bg-card/80 ${entry.isNew ? "border-primary/30 border-2" : "border-border/50"}`}>
                       <CardHeader>
                         <div className="flex items-start gap-4">
                           <span className="text-4xl font-bold text-primary/20 group-hover:text-primary/40 transition-colors">
@@ -262,6 +273,11 @@ export default function AgenticPlaybookPage() {
                               <CardTitle className="text-lg group-hover:text-primary transition-colors">
                                 {entry.title}
                               </CardTitle>
+                              {entry.isNew && (
+                                <span className="text-xs font-medium bg-primary text-primary-foreground px-2.5 py-1 rounded-full">
+                                  New
+                                </span>
+                              )}
                               <span className="text-xs text-muted-foreground bg-secondary px-2 py-0.5 rounded">
                                 {entry.type}
                               </span>
