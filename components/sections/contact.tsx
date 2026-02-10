@@ -26,9 +26,8 @@ export function Contact() {
 
           <FadeIn delay={0.2}>
             <p className="text-lg text-muted-foreground mb-10 max-w-xl mx-auto">
-              Interested in discussing engineering leadership, quality
-              engineering, or potential collaborations? I&apos;m always open to
-              meaningful conversations.
+              Interested in discussing engineering leadership, UI architecture,
+              or potential collaborations? I&apos;d love to hear from you.
             </p>
           </FadeIn>
 

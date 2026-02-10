@@ -3,33 +3,33 @@ import { FadeIn } from "@/components/ui/fade-in";
 
 const pillars = [
   "Application strategy and governance",
+  "UI architecture and microfrontend design",
   "Resilience and security by design",
-  "Modern engineering (Agile, DevSecOps, CI/CD)",
-  "Integration and rationalisation",
-  "Vendor and global team leadership",
+  "Agile delivery with DevSecOps and CI/CD",
+  "Global team leadership",
 ];
 
 const outcomes = [
   {
     value: "99.42%",
-    label: "SLA uptime across global, multi-timezone trading hours",
+    label: "SLA uptime by investing in chaos engineering and instant rollback",
   },
   {
     value: "42%",
-    label: "Cycle time reduction via AI-augmented delivery",
+    label: "Faster cycle times after introducing AI-assisted delivery",
   },
   {
     value: "63%",
-    label: "Story throughput increase on legacy quality work",
+    label: "More stories delivered per sprint on legacy codebases",
   },
 ];
 
 const evidence = [
-  "Sanctions-constrained acquisition: orchestrated relocation of 15 engineers and families, safeguarding wellbeing and delivery continuity.",
-  "AI-augmented engineering: 6 workshops, 89% team trained, 62% AI-assisted delivery penetration per sprint, with quality and productivity tracking.",
-  "Implemented weekend dev-environment lightswitch policy to reduce cost while sustaining resilience targets.",
-  "Quality engineering emphasis across chaos engineering, contract testing, and performance testing, embedded into DevSecOps to strengthen resilience and release confidence at scale.",
-  "MTTR reduction through streamlined CI/CD and instant rollback using Spinnaker and Kubernetes.",
+  "Relocated 15 engineers and their families during a sanctions-constrained acquisition, keeping both people safe and delivery on track.",
+  "Ran 6 AI workshops, trained 89% of the team, and reached 62% AI-assisted sprint penetration — tracking quality alongside productivity.",
+  "Introduced a weekend dev-environment lightswitch policy that cut infrastructure costs without affecting resilience.",
+  "Embedded chaos engineering, contract testing, and performance testing into our DevSecOps pipeline to catch issues before they reached production.",
+  "Reduced mean time to recovery by streamlining CI/CD and adding instant rollback through Spinnaker and Kubernetes.",
 ];
 
 export function LeadershipSnapshot() {
@@ -44,16 +44,16 @@ export function LeadershipSnapshot() {
           </FadeIn>
           <FadeIn delay={0.1}>
             <h2 className="mb-4">
-              Application strategy and architecture
+              How I lead engineering
               <br />
-              for global-scale growth.
+              at scale.
             </h2>
           </FadeIn>
           <FadeIn delay={0.2}>
             <p className="text-muted-foreground max-w-2xl">
-              Executive-level leadership that blends governance, resilience, and
-              modern engineering to accelerate integration, reduce risk, and
-              unlock digital transformation.
+              I combine hands-on technical judgement with governance and people
+              leadership &mdash; keeping systems reliable, teams healthy, and
+              delivery predictable.
             </p>
           </FadeIn>
         </div>
@@ -63,7 +63,7 @@ export function LeadershipSnapshot() {
             <div className="rounded-2xl border border-border/60 bg-card p-6 h-full">
               <p className="text-sm text-muted-foreground mb-4">Pillars</p>
               <p className="text-sm text-primary mb-3">
-                The strategic backbone of my application estate leadership.
+                The areas I focus on as an engineering leader.
               </p>
               <div className="flex flex-wrap gap-2">
                 {pillars.map((pillar) => (
@@ -84,7 +84,7 @@ export function LeadershipSnapshot() {
                 Executive outcomes
               </p>
               <p className="text-sm text-primary mb-3">
-                Proven impact across resilience, speed, and delivery quality.
+                Measurable results across reliability, speed, and quality.
               </p>
               <div className="grid gap-4 sm:grid-cols-3">
                 {outcomes.map((item) => (
@@ -105,8 +105,7 @@ export function LeadershipSnapshot() {
             <div className="rounded-2xl border border-border/60 bg-card p-6 h-full">
               <p className="text-sm text-muted-foreground mb-4">Evidence</p>
               <p className="text-sm text-primary mb-3">
-                High-stakes delivery with people, risk, and performance at the
-                center.
+                What this looks like in practice.
               </p>
               <ul className="space-y-3 text-sm text-muted-foreground">
                 {evidence.map((item) => (
@@ -125,45 +124,43 @@ export function LeadershipSnapshot() {
                 Board-level insight
               </p>
               <p className="text-sm text-primary mb-3">
-                Clear narratives that align executives on strategy and risk.
+                How I communicate engineering to the business.
               </p>
               <ul className="space-y-2 text-sm text-muted-foreground">
                 <li className="flex gap-2">
                   <span className="text-primary mt-1.5 shrink-0">&bull;</span>
                   <span>
-                    Executive stakeholder alignment through clear strategic
-                    roadmaps, resilience metrics, and regulatory-aware risk
-                    narratives.
+                    Built strategic roadmaps with resilience metrics and
+                    regulatory context to align executives on priorities and risk.
                   </span>
                 </li>
                 <li className="flex gap-2">
                   <span className="text-primary mt-1.5 shrink-0">&bull;</span>
                   <span>
-                    ITIL-aligned service management applied to software delivery:
-                    ServiceNow migration, SLA tiers, escalation paths, and
-                    incident/problem/change governance.
+                    Migrated to ITIL-aligned service management (ServiceNow) with
+                    SLA tiers, escalation paths, and incident/problem/change
+                    governance.
                   </span>
                 </li>
                 <li className="flex gap-2">
                   <span className="text-primary mt-1.5 shrink-0">&bull;</span>
                   <span>
-                    Change enablement around CI/CD with risk controls, plus
-                    contract-testing training to raise environment stability.
+                    Added risk controls to CI/CD and trained teams on contract
+                    testing to improve environment stability.
                   </span>
                 </li>
                 <li className="flex gap-2">
                   <span className="text-primary mt-1.5 shrink-0">&bull;</span>
                   <span>
-                    Board-ready KPI packs that connect operational health,
-                    delivery risk, and transformation progress.
+                    Produce board-ready KPI packs that connect operational health,
+                    delivery risk, and programme progress.
                   </span>
                 </li>
                 <li className="flex gap-2">
                   <span className="text-primary mt-1.5 shrink-0">&bull;</span>
                   <span>
-                    Configuration Management Database (CMDB) and application
-                    dependency mapping to improve integration readiness and
-                    risk visibility.
+                    Mapped application dependencies (CMDB) to improve integration
+                    readiness and give leadership clear risk visibility.
                   </span>
                 </li>
               </ul>

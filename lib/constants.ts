@@ -1,10 +1,12 @@
 export const expertise = [
+  "UI Architecture & Microfrontends",
+  "React / TypeScript / Next.js",
   "Portfolio Management Systems",
-  "Low-Latency Platforms",
   "Event-Driven Architecture",
-  "Distributed Caching",
+  "Distributed Caching & Replication",
   "AWS / EKS / Lambda",
   "Infrastructure as Code",
-  "Multi-Region Replication",
+  "AI-Augmented Delivery",
+  "Resilience Engineering",
   "Global Team Leadership",
 ];

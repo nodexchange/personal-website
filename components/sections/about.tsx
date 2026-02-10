@@ -6,19 +6,19 @@ import { ExpertiseTags } from "@/components/ui/expertise-tags";
 const highlights = [
   {
     stat: "$438B+",
-    label: "AUM in Systems I Lead",
+    label: "Assets under management",
   },
   {
     stat: "8B+",
-    label: "Daily Messages Processed",
+    label: "Daily messages processed",
   },
   {
     stat: "4",
-    label: "Continents Managed",
+    label: "Continents managed",
   },
   {
     stat: "15+",
-    label: "Years Engineering Leadership",
+    label: "Years in engineering leadership",
   },
 ];
 
@@ -38,36 +38,38 @@ export function About() {
 
             <FadeIn delay={0.1}>
               <h2 className="mb-6">
-                Technical depth meets
+                From UI components to
                 <br />
-                business acumen.
+                trading infrastructure.
               </h2>
             </FadeIn>
 
             <FadeIn delay={0.2}>
               <div className="space-y-4 text-muted-foreground">
                 <p>
-                  UK-based engineering leader specialising in portfolio management
-                  and investment systems. I bridge research, middle office, and
-                  technology &mdash; translating complex investment strategies into
-                  high-performance, low-latency platforms.
+                  I started my career building user interfaces &mdash; seven years
+                  of ad-creative front-ends at Verizon Media, then leading
+                  microfrontend and payment platform teams at Bottomline
+                  Technologies. That foundation in UI architecture still shapes
+                  how I think about systems today.
                 </p>
 
                 <p>
-                  Deep hands-on experience across the investment lifecycle:
-                  target allocation engines (SAA/TAA), research feeds, alpha
-                  screening, exposure management, portfolio construction, and
-                  order execution systems. Partnering directly with portfolio
-                  managers, research desks, and benchmark teams. Systems integrate
-                  with enterprise risk management frameworks.
+                  Now I lead multi-asset portfolio management platforms at
+                  JPMorgan Chase, covering the full investment lifecycle: target
+                  allocation engines (SAA/TAA), research feeds, alpha screening,
+                  exposure management, portfolio construction, and order
+                  execution. I work closely with portfolio managers, research
+                  desks, and risk teams to turn investment strategies into
+                  working software.
                 </p>
 
                 <p>
-                  Technical depth in event-driven architecture, distributed caching
-                  (GemFire, Ignite), multi-region database replication, and AWS
-                  infrastructure (EKS, Lambda, Bedrock). Infrastructure as Code with
-                  Terraform at the forefront. I build resilient systems through chaos
-                  engineering, contract testing, and performance testing at scale.
+                  On the technical side, I work across event-driven architecture,
+                  distributed caching (GemFire, Ignite), multi-region
+                  replication, and AWS infrastructure (EKS, Lambda, Bedrock). I
+                  keep systems reliable through chaos engineering, contract
+                  testing, and Infrastructure as Code with Terraform.
                 </p>
               </div>
             </FadeIn>

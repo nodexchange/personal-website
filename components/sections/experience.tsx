@@ -16,23 +16,23 @@ const experiences = [
     period: "Dec 2022 - Present",
     location: "London",
     highlights: [
-      "Building portfolio management platforms ($438B+ AUM): target allocation (SAA/TAA), alpha screening, exposure management, and order execution systems",
-      "Scaled 8B+ daily message architecture to multi-region with low-latency data replication",
-      "Partnering with quants and portfolio managers to translate investment strategies into performant systems",
-      "Leading global engineering teams across NA, EMEA, and APAC; driving AI/agentic tooling adoption",
+      "Own the full portfolio management platform ($438B+ AUM) — from target allocation engines and alpha screening to order execution",
+      "Scaled transaction architecture to multi-region, processing 8B+ daily messages through GemFire and distributed caching",
+      "Work directly with quants and portfolio managers to turn investment strategies into reliable, tested software",
+      "Manage global teams across NA, EMEA, and APAC while driving AI-assisted delivery adoption (42% cycle time reduction)",
     ],
   },
   {
     company: "Bottomline Technologies",
     role: "Senior UI Engineering Manager",
-    subtitle: "High-Throughput Financial Transactions",
+    subtitle: "Financial Transaction Platforms",
     period: "May 2020 - Dec 2022",
     location: "Reading",
     highlights: [
-      "Built engineering team from ground up; 200% growth in 12 months",
-      "Delivered platforms supporting 2B+ daily distributed transactions",
-      "Architected event-driven systems for real-time payment processing",
-      "Established technical vision via contextual maturity matrix",
+      "Designed and shipped a microfrontend architecture (React + Module Federation) for the payment processing platform",
+      "Grew the engineering team by 200% in 12 months through structured hiring and mentoring",
+      "Delivered platforms handling 2B+ daily distributed financial transactions",
+      "Created a maturity matrix to prioritise investment in testing, CI/CD, and front-end tooling",
     ],
   },
   {
@@ -42,21 +42,21 @@ const experiences = [
     period: "Apr 2019 - May 2020",
     location: "Oxford",
     highlights: [
-      "Hands-on architecture leadership for globally distributed team",
-      "Implemented container-driven infrastructure (Docker, K8s) and CI/CD pipelines",
-      "Established security-first engineering practices and DevSecOps culture",
+      "Led hands-on architecture for a globally distributed Higher Education platform team",
+      "Moved from manual deployments to Docker containers and automated CI/CD, cutting release cycles from weeks to days",
+      "Partnered with security to establish DevSecOps practices and a security-first culture",
     ],
   },
   {
     company: "Verizon Media (AOL+Yahoo)",
     role: "Creative Solutions Manager",
-    subtitle: "Real-Time AdTech Platforms",
+    subtitle: "AdTech Creative Platforms",
     period: "Aug 2012 - Apr 2019",
     location: "London",
     highlights: [
-      "Led 16+ globally distributed engineers delivering low-latency ad-serving systems",
-      "Scaled real-time bidding and creative delivery platforms",
-      "7 years building high-throughput systems under strict latency SLAs",
+      "Led 16+ engineers building the front-end creative tooling platform for ad assembly, preview, and launch",
+      "Scaled creative delivery systems to handle real-time bidding traffic under strict latency SLAs",
+      "Seven years managing distributed teams across in-house, remote, and offshore locations",
     ],
   },
 ];
@@ -74,17 +74,17 @@ export function Experience() {
 
           <FadeIn delay={0.1}>
             <h2 className="mb-4">
-              Building mission-critical
+              From ad-tech UIs to
               <br />
-              financial platforms.
+              trading systems.
             </h2>
           </FadeIn>
 
           <FadeIn delay={0.2}>
             <p className="text-muted-foreground max-w-2xl">
-              From real-time ad-serving to multi-asset portfolio management &mdash;
-              15+ years delivering low-latency, high-throughput systems across
-              global teams.
+              15+ years building front-end platforms, distributed systems, and
+              the teams behind them &mdash; from creative tooling at Verizon to
+              portfolio management at JPMorgan.
             </p>
           </FadeIn>
         </div>

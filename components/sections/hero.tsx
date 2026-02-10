@@ -54,24 +54,25 @@ export function Hero() {
         <Container className="relative z-10 pt-24 pb-16">
           <div className="max-w-3xl">
             <h1 className="mb-4 text-[clamp(2.25rem,4vw+0.875rem,3.75rem)]">
-              Architecting{" "}
-              <span className="text-primary">high-performance</span>
+              Building the{" "}
+              <span className="text-primary">UI and platform</span>
               <br />
-              platforms that scale
+              systems behind global
               <br />
-              globally.
+              finance.
             </h1>
 
             <p className="text-base text-muted-foreground mb-5 max-w-xl leading-relaxed">
-              Engineering Leadership &bull; Real-Time Systems &bull; Event-Driven Architecture &bull; Global Teams
+              Engineering Leadership &bull; UI Architecture &bull; Microfrontends &bull; Global Teams
             </p>
 
             <p className="text-base text-muted-foreground mb-4 max-w-2xl">
-              Executive Director at JPMorgan Chase, building multi-asset portfolio
-              management systems ($438B+ AUM) &mdash; from target allocation engines
-              (SAA/TAA) and quant-driven research feeds to alpha screening, portfolio
-              construction, and order execution. 15+ years delivering low-latency,
-              high-throughput platforms across global teams.
+              Executive Director at JPMorgan Chase, leading multi-asset portfolio
+              management systems ($438B+ AUM). Started in front-end engineering
+              &mdash; building ad-creative UIs at Verizon, then microfrontend
+              platforms at Bottomline &mdash; and now applying that craft to
+              portfolio construction, order execution, and trading infrastructure
+              across four continents.
             </p>
 
             <p className="text-sm text-muted-foreground mb-6 max-w-2xl">
