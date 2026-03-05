@@ -22,6 +22,18 @@ export function PlaybookPromo() {
                   insights on workflows, team dynamics, and the future of
                   engineering in the age of agentic tools.
                 </p>
+                <p className="mt-3 text-sm text-muted-foreground">
+                  Latest:
+                  {" "}
+                  <Link
+                    href="https://www.linkedin.com/pulse/agentic-playbook-13-rise-cloud-agents-marcin-wojtala-3fnse"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-primary hover:underline"
+                  >
+                    Agentic Playbook #13 - The Rise of Cloud Agents
+                  </Link>
+                </p>
               </div>
               <div className="shrink-0">
                 <Button size="lg" asChild>

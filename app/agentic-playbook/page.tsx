@@ -18,6 +18,17 @@ export const metadata = {
 
 const playbookEntries = [
   {
+    number: "13",
+    title: "The Rise of Cloud Agents",
+    subtitle: "How Intelligent Agents Are Moving from IDE to Infrastructure",
+    summary:
+      "Cloud-native agents are shifting AI-assisted development from local coding tools into scalable platform workflows. This marks a transition from individual productivity boosts to enterprise-grade orchestration, governance, and delivery acceleration.",
+    tags: ["Cloud Agents", "Platform Engineering", "AI Strategy"],
+    url: "https://www.linkedin.com/pulse/agentic-playbook-13-rise-cloud-agents-marcin-wojtala-3fnse",
+    type: "article",
+    isNew: true,
+  },
+  {
     number: "12",
     title: "Why Skills Outlive Models",
     subtitle: "From Prompt Engineering to Reusable Agent Capabilities",
@@ -26,7 +37,6 @@ const playbookEntries = [
     tags: ["Agent Skills", "Architecture", "Engineering Leadership"],
     url: "https://www.linkedin.com/pulse/agentic-playbook-12-why-skills-outlive-models-marcin-wojtala-nzb0e",
     type: "article",
-    isNew: true,
   },
   {
     number: "11",
