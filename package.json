@@ -6,7 +6,8 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "eslint"
+    "lint": "eslint",
+    "resume:pdf": "npx md-to-pdf public/marcin-wojtala-resume.md --pdf-options \"{\\\"format\\\":\\\"A4\\\",\\\"margin\\\":{\\\"top\\\":\\\"10.85mm\\\",\\\"bottom\\\":\\\"10.99mm\\\",\\\"left\\\":\\\"14.82mm\\\",\\\"right\\\":\\\"14.79mm\\\"}}\""
   },
   "dependencies": {
     "@radix-ui/react-navigation-menu": "^1.2.14",

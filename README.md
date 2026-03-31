@@ -34,7 +34,37 @@ You can check out [the Next.js GitHub repository](https://github.com/vercel/next
 To export the markdown resume to PDF, use [md-to-pdf](https://github.com/simonhaenisch/md-to-pdf):
 
 ```bash
-npx md-to-pdf public/marcin-wojtala-resume.md --pdf-options '{"format": "A4", "margin": {"top": "15mm", "bottom": "15mm", "left": "20mm", "right": "20mm"}}'
+npm run resume:pdf
+# or
+pnpm resume:pdf
+```
+
+Equivalent direct command:
+
+```bash
+npx md-to-pdf public/marcin-wojtala-resume.md --pdf-options '{"format": "A4", "margin": {"top": "10.85mm", "bottom": "10.99mm", "left": "14.82mm", "right": "14.79mm"}}'
+```
+
+On Windows PowerShell, prefer this (safe JSON handling):
+
+```powershell
+$pdfOptions = @{
+  format = 'A4'
+  margin = @{
+    top    = '10.85mm'
+    bottom = '10.99mm'
+    left   = '14.82mm'
+    right  = '14.79mm'
+  }
+} | ConvertTo-Json -Compress
+
+npx md-to-pdf public/marcin-wojtala-resume.md --pdf-options $pdfOptions
+```
+
+If `npx` is blocked by PowerShell execution policy, run via `cmd`:
+
+```powershell
+cmd /c npx md-to-pdf public/marcin-wojtala-resume.md --pdf-options "{\"format\":\"A4\",\"margin\":{\"top\":\"10.85mm\",\"bottom\":\"10.99mm\",\"left\":\"14.82mm\",\"right\":\"14.79mm\"}}"
 ```
 
 This generates `public/marcin-wojtala-resume.pdf`.

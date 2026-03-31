@@ -122,9 +122,9 @@ pdf_options:
 
 ## SUMMARY
 
-I'm an engineering leader with 15+ years of experience across UI architecture, platform engineering, and global delivery in financial services. My career started in front-end — building ad-creative UIs at Verizon Media (7 years), then leading microfrontend and payment platform teams at Bottomline Technologies as Senior UI Engineering Manager. Today I lead multi-asset portfolio management systems at JPMorgan Chase ($438B+ AUM), where my team processes 8B+ messages daily across multi-region infrastructure.
+I'm an engineering leader with 15+ years of experience across UI architecture, platform engineering, and global delivery in financial services. My career started in front-end, building pre-school interactive experiences, followed by ad-creative UIs at Verizon Media (7 years), then leading micro-frontend and payment platform teams at Bottomline Technologies as Senior UI Engineering Manager. Today I lead multi-asset portfolio management systems at JPMorgan Chase ($438B+ AUM), where my team processes 8B+ messages daily across multi-region systems.
 
-I care about two things equally: the craft of building reliable, well-tested software and the people who build it. I've relocated 15 engineers and their families during a sanctions-constrained acquisition, grown teams by 200% in a year, and introduced AI-assisted delivery practices that cut cycle times by 42%.
+I care about two things equally: the craft of building reliable, well-tested software and the people who build it.
 
 ---
 
@@ -151,14 +151,14 @@ I care about two things equally: the craft of building reliable, well-tested sof
 Leading engineering for multi-asset portfolio management platforms serving $438B+ AUM across North America, EMEA, and APAC.
 
 - Own the end-to-end platform covering target allocation engines (SAA/TAA), research feeds integration, alpha screening, exposure management, portfolio construction, and order execution
-- Scaled the transaction architecture from single-region to multi-region, handling 8B+ daily messages with low-latency replication through GemFire and distributed caching
+- Scaled the transaction architecture from single-region to multi-region, handling 8B+ daily messages with low-latency replication through distributed caching
 - Achieved 99.42% SLA uptime across global trading hours by investing in chaos engineering, contract testing, and instant rollback via Spinnaker and Kubernetes
-- Migrated service management to ServiceNow with ITIL-aligned incident, problem, and change governance — creating clear escalation paths and SLA tiers
-- Sponsored AI-assisted delivery across the org: ran 6 workshops, trained 89% of engineers, and reached 62% AI-assisted sprint penetration while tracking quality metrics
-- Manage distributed engineering teams across the US, UK, India, and APAC, setting architectural standards and running cross-region design reviews
+- Migrated service management to ServiceNow with ITIL-aligned incident, problem, and change governance, creating clear escalation paths and SLA tiers
+- Sponsored AI-assisted delivery across the org: ran 6 in-person workshops, as well as online sessions that trained 89% of 210 full-stack engineers, and reached 62% AI-assisted sprint penetration while tracking quality metrics
+- Manage global engineering teams across the US, UK, India, Hong Kong and Taiwan, setting architectural standards and running cross-region design reviews
 - Introduced DevSecOps practices including security tooling integration (Snyk, Veracode) alongside chaos engineering and performance testing to strengthen release confidence
 
-**Technologies:** Java, Spring Boot, React, TypeScript, AWS (EKS, Lambda), GemFire, Kafka, Terraform, Jenkins, PactFlow
+**Technologies:** Java, Spring Boot, React, TypeScript, AWS (EKS, ECS, Lambda), GemFire, Kafka, Terraform, Jenkins, Spinnaker, PactFlow
 
 ### Bottomline Technologies | Reading
 **Senior UI Engineering Manager – Financial Transaction Platforms**
@@ -166,12 +166,13 @@ Leading engineering for multi-asset portfolio management platforms serving $438B
 
 Built and led the engineering team delivering platforms supporting 2B+ daily distributed financial transactions.
 
-- Designed and shipped a microfrontend architecture using React and Module Federation, enabling independent team deployment across the payment processing platform
+- Designed and shipped a micro-frontend architecture using React and Module Federation, enabling independent team deployment across the payment processing platform
 - Integrated Open Banking APIs to connect financial data sources, meeting regulatory compliance requirements while improving data flow
-- Grew the engineering team by 200% in 12 months through structured hiring, onboarding, and a mentoring programme
-- Created a contextual maturity matrix to assess team capabilities and set a technical roadmap — used it to prioritise investment in testing, CI/CD, and front-end tooling
+- Grew the engineering team by 200% through structured hiring, onboarding, and mentoring programmes 
+- Relocated 15 engineers and their families during a sanctions-constrained acquisition
+- Created a contextual maturity matrix to assess team capabilities and set a technical roadmap, used it to prioritise investment in testing, CI/CD, and front-end tooling
 
-**Technologies:** React, WPF, C#, .NET, Node.js, AWS, Kafka, Microfrontends (Module Federation), CI/CD Pipelines
+**Technologies:** React, WPF, C#, .NET, Node.js, AWS, Kafka, Micro-frontends, CI/CD
 
 ---
 
