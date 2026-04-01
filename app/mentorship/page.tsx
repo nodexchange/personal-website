@@ -14,14 +14,14 @@ import {
 export const metadata = {
   title: "Mentorship | Marcin Wojtala",
   description:
-    "Engineering mentorship and career guidance for developers and leaders looking to grow.",
+    "Hands-on engineering mentorship for developers and leaders growing technical depth, leadership judgment, and delivery impact.",
 };
 
 const mentorshipAreas = [
   {
     title: "Engineering Leadership",
     description:
-      "Transition from individual contributor to engineering manager or director. Learn to build and scale high-performing teams.",
+      "Grow from senior engineer into an engaged technical leader who can set direction, raise standards, and build strong teams.",
     topics: [
       "Team building & hiring",
       "Performance management",
@@ -32,7 +32,7 @@ const mentorshipAreas = [
   {
     title: "Quality Engineering",
     description:
-      "Deep dive into chaos engineering, contract testing, and performance testing. Build quality-first cultures.",
+      "Practical guidance on chaos engineering, contract testing, and performance testing to build resilient systems and stronger delivery habits.",
     topics: [
       "Chaos engineering practices",
       "Contract testing strategies",
@@ -43,7 +43,7 @@ const mentorshipAreas = [
   {
     title: "Career Growth",
     description:
-      "Navigate your engineering career path from senior developer to VP/Head of Engineering.",
+      "Navigate your path from senior developer to staff, manager, director, or VP with clearer positioning and practical next steps.",
     topics: [
       "Career path planning",
       "Personal branding",
@@ -54,7 +54,7 @@ const mentorshipAreas = [
   {
     title: "Startup Advisory",
     description:
-      "Technical guidance for early-stage startups looking to build scalable engineering foundations.",
+      "Technical guidance for early-stage startups building scalable engineering foundations, delivery practices, and technical direction.",
     topics: [
       "Tech stack decisions",
       "Hiring first engineers",
@@ -103,9 +103,9 @@ export default function MentorshipPage() {
 
             <FadeIn delay={0.2}>
               <p className="text-xl text-muted-foreground mb-10 max-w-2xl">
-                15+ years of engineering leadership experience distilled into
-                actionable guidance. Whether you&apos;re transitioning to management
-                or scaling your team, I can help.
+                Hands-on guidance shaped by 15+ years of engineering leadership.
+                Whether you&apos;re stepping into leadership, sharpening technical
+                judgment, or scaling a team, I help with practical next moves.
               </p>
             </FadeIn>
 
@@ -132,8 +132,9 @@ export default function MentorshipPage() {
             <FadeIn delay={0.1}>
               <p className="text-muted-foreground mb-12 max-w-2xl">
                 I offer mentorship in areas where I have deep, hands-on
-                experience. Each session is tailored to your specific challenges
-                and goals.
+                experience. Each session is tailored to your specific
+                challenges, with a focus on decisions, trade-offs, and work you
+                can apply immediately.
               </p>
             </FadeIn>
 
@@ -213,8 +214,9 @@ export default function MentorshipPage() {
 
               <FadeIn delay={0.1}>
                 <p className="text-muted-foreground mb-8">
-                  Let&apos;s discuss your goals and how I can help you get there.
-                  Initial consultations are free.
+                  Let&apos;s talk through your goals, current challenges, and where
+                  focused support would make the biggest difference. Initial
+                  consultations are free.
                 </p>
               </FadeIn>
 

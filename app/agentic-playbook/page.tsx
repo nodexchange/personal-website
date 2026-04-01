@@ -199,7 +199,8 @@ export default function AgenticPlaybookPage() {
               <p className="text-xl text-muted-foreground mb-10 max-w-2xl">
                 A series exploring AI-assisted development, engineering leadership,
                 and the evolving relationship between developers and their tools.
-                Practical insights from the front lines of the agentic revolution.
+                Practical insights from hands-on adoption inside real engineering
+                organisations.
               </p>
             </FadeIn>
 
@@ -336,14 +337,16 @@ export default function AgenticPlaybookPage() {
                     tools like Cursor, Claude, and Copilot are changing the way
                     engineering teams work. As Executive Director at JPMorgan Chase
                     with executive sponsorship for AI and automation rollout, I
-                    have a front-row seat to this transformation.
+                    am working through this transformation directly while staying
+                    close to the work itself.
                   </p>
                   <p>
-                    These aren&apos;t theoretical musings - they&apos;re observations from
-                    leading global engineering teams through real AI adoption.
-                    The wins, the failures, the security concerns, and the
-                    unexpected consequences for team dynamics and individual
-                    cognitive health.
+                    These aren&apos;t abstract ideas - they&apos;re observations from
+                    leading global engineering teams through real AI adoption,
+                    from workflows and standards to capability-building and
+                    review practices. The wins, the failures, the security
+                    concerns, and the unexpected consequences for team dynamics
+                    and individual cognitive health.
                   </p>
                   <p>
                     New entries are published regularly on LinkedIn. The series

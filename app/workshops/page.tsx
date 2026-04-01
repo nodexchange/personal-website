@@ -70,7 +70,7 @@ const workshops = [
     format: "Interactive workshop",
     participants: "10-15 participants",
     description:
-      "Intensive program for engineers transitioning to leadership. Covers team building, communication, and technical strategy.",
+      "Intensive program for engineers moving into leadership, covering technical direction, team development, communication, and pragmatic decision-making.",
     outcomes: [
       "Develop your leadership style and philosophy",
       "Master difficult conversations and feedback",
@@ -85,7 +85,7 @@ const workshops = [
     format: "Workshop with labs",
     participants: "10-20 participants",
     description:
-      "Comprehensive workshop on building quality-first engineering cultures. Covers testing strategies, automation, and metrics.",
+      "Comprehensive workshop on building reliable delivery through testing strategies, automation, resilience practices, and actionable metrics.",
     outcomes: [
       "Design effective testing pyramids",
       "Implement performance testing frameworks",
@@ -135,9 +135,10 @@ export default function WorkshopsPage() {
 
             <FadeIn delay={0.2}>
               <p className="text-xl text-muted-foreground mb-10 max-w-2xl">
-                Interactive workshops designed to upskill your team. From chaos
-                engineering to leadership development, each session combines
-                theory with practical exercises.
+                Interactive workshops designed to upskill engineering teams in
+                ways that stick. From chaos engineering to leadership
+                development, each session combines practical exercises with
+                real-world delivery context.
               </p>
             </FadeIn>
 

@@ -122,7 +122,7 @@ pdf_options:
 
 ## SUMMARY
 
-I'm an engineering leader with 15+ years of experience across UI architecture, platform engineering, and global delivery in financial services. My career started in front-end, building pre-school interactive experiences, followed by ad-creative UIs at Verizon Media (7 years), then leading micro-frontend and payment platform teams at Bottomline Technologies as Senior UI Engineering Manager. Today I lead multi-asset portfolio management systems at JPMorgan Chase ($438B+ AUM), where my team processes 8B+ messages daily across multi-region systems.
+I’m a hands-on engineering leader who actively codes and stays close to the work, contributing to pull requests, technology choices, standards, technical direction, and team growth while aligning people, technology, and outcomes. With 15+ years of experience across UI architecture, platform engineering, and global delivery in financial services, I currently lead multi-asset portfolio management systems at JPMorgan Chase, supporting $438B+ in assets under management across global, high-volume platforms.
 
 I care about two things equally: the craft of building reliable, well-tested software and the people who build it.
 
@@ -148,15 +148,15 @@ I care about two things equally: the craft of building reliable, well-tested sof
 **Executive Director – Multi-Asset Portfolio Management Systems**
 *December 2022 – Present*
 
-Leading engineering for multi-asset portfolio management platforms serving $438B+ AUM across North America, EMEA, and APAC.
+Hands-on engineering leadership for multi-asset portfolio management platforms supporting $438B+ AUM across North America, EMEA, and APAC.
 
-- Own the end-to-end platform covering target allocation engines (SAA/TAA), research feeds integration, alpha screening, exposure management, portfolio construction, and order execution
-- Scaled the transaction architecture from single-region to multi-region, handling 8B+ daily messages with low-latency replication through distributed caching
-- Achieved 99.42% SLA uptime across global trading hours by investing in chaos engineering, contract testing, and instant rollback via Spinnaker and Kubernetes
-- Migrated service management to ServiceNow with ITIL-aligned incident, problem, and change governance, creating clear escalation paths and SLA tiers
-- Sponsored AI-assisted delivery across the org: ran 6 in-person workshops, as well as online sessions that trained 89% of 210 full-stack engineers, and reached 62% AI-assisted sprint penetration while tracking quality metrics
-- Manage global engineering teams across the US, UK, India, Hong Kong and Taiwan, setting architectural standards and running cross-region design reviews
-- Introduced DevSecOps practices including security tooling integration (Snyk, Veracode) alongside chaos engineering and performance testing to strengthen release confidence
+- Lead the end-to-end platform spanning target allocation engines (SAA/TAA), research feed integration, alpha screening, exposure management, portfolio construction, and order execution
+- Stay actively involved in delivery through coding, pull request reviews, solution design, and architecture decisions across business-critical production systems
+- Scaled the transaction architecture from single-region to multi-region, supporting 8B+ daily messages with low-latency replication through distributed caching
+- Improved platform resilience to 99.42% SLA uptime across global trading hours through chaos engineering, contract testing, and instant rollback via Spinnaker and Kubernetes
+- Set technical direction across globally distributed teams in the US, UK, India, Hong Kong, and Taiwan, shaping engineering standards, design reviews, and ways of working
+- Introduced DevSecOps practices with Snyk, Veracode, performance testing, and release safeguards to strengthen quality and delivery confidence
+- Sponsored AI-assisted engineering across the organisation, leading in-person and online workshops that trained 89% of 210 full-stack engineers and contributed to 62% AI-assisted sprint penetration
 
 **Technologies:** Java, Spring Boot, React, TypeScript, AWS (EKS, ECS, Lambda), GemFire, Kafka, Terraform, Jenkins, Spinnaker, PactFlow
 

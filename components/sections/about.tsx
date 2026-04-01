@@ -47,11 +47,12 @@ export function About() {
             <FadeIn delay={0.2}>
               <div className="space-y-4 text-muted-foreground">
                 <p>
-                  I started my career building user interfaces &mdash; seven years
-                  of ad-creative front-ends at Verizon Media, then leading
-                  microfrontend and payment platform teams at Bottomline
-                  Technologies. That foundation in UI architecture still shapes
-                  how I think about systems today.
+                  I started my career building user interfaces &mdash; from
+                  ad-creative front-ends at Verizon Media to microfrontend and
+                  payment platform teams at Bottomline Technologies. That
+                  foundation in UI architecture still shapes how I think about
+                  systems: close to the user, close to the code, and deliberate
+                  about how teams build.
                 </p>
 
                 <p>
@@ -59,17 +60,22 @@ export function About() {
                   JPMorgan Chase, covering the full investment lifecycle: target
                   allocation engines (SAA/TAA), research feeds, alpha screening,
                   exposure management, portfolio construction, and order
-                  execution. I work closely with portfolio managers, research
+                  execution. I stay actively involved in delivery through
+                  coding, pull request reviews, solution design, and technical
+                  direction, working closely with portfolio managers, research
                   desks, and risk teams to turn investment strategies into
-                  working software.
+                  reliable production systems.
                 </p>
 
                 <p>
-                  On the technical side, I work across event-driven architecture,
-                  distributed caching (GemFire, Ignite), multi-region
-                  replication, and AWS infrastructure (EKS, Lambda, Bedrock). I
-                  keep systems reliable through chaos engineering, contract
-                  testing, and Infrastructure as Code with Terraform.
+                  My leadership style is hands-on and engaged: aligning people,
+                  technology, and outcomes through clear standards, pragmatic
+                  technical choices, and ways of working that help teams deliver
+                  reliable software at scale. On the technical side, I work
+                  across event-driven architecture, distributed caching,
+                  multi-region replication, AWS infrastructure, and resilience
+                  practices including chaos engineering, contract testing, and
+                  Infrastructure as Code with Terraform.
                 </p>
               </div>
             </FadeIn>

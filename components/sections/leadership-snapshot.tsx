@@ -2,7 +2,8 @@ import { Container } from "@/components/layout/container";
 import { FadeIn } from "@/components/ui/fade-in";
 
 const pillars = [
-  "Application strategy and governance",
+  "Hands-on technical leadership",
+  "Technical direction and standards",
   "UI architecture and microfrontend design",
   "Resilience and security by design",
   "Agile delivery with DevSecOps and CI/CD",
@@ -15,16 +16,17 @@ const outcomes = [
     label: "SLA uptime by investing in chaos engineering and instant rollback",
   },
   {
-    value: "42%",
-    label: "Faster cycle times after introducing AI-assisted delivery",
+    value: "89%",
+    label: "Of 210 engineers trained through AI-assisted delivery workshops",
   },
   {
-    value: "63%",
-    label: "More stories delivered per sprint on legacy codebases",
+    value: "62%",
+    label: "AI-assisted sprint penetration reached while tracking quality metrics",
   },
 ];
 
 const evidence = [
+  "Stay close to delivery through coding, pull request reviews, solution design, and architecture decisions on production systems.",
   "Relocated 15 engineers and their families during a sanctions-constrained acquisition, keeping both people safe and delivery on track.",
   "Ran 6 AI workshops, trained 89% of the team, and reached 62% AI-assisted sprint penetration, tracking quality alongside productivity.",
   "Introduced a weekend dev-environment lightswitch policy that cut infrastructure costs without affecting resilience.",
@@ -51,9 +53,9 @@ export function LeadershipSnapshot() {
           </FadeIn>
           <FadeIn delay={0.2}>
             <p className="text-muted-foreground max-w-2xl">
-              I combine hands-on technical judgement with governance and people
-              leadership &mdash; keeping systems reliable, teams healthy, and
-              delivery predictable.
+              I lead from within the work, combining active technical
+              contribution with clear standards, strong teams, and reliable
+              delivery at scale.
             </p>
           </FadeIn>
         </div>
@@ -131,15 +133,16 @@ export function LeadershipSnapshot() {
                   <span className="text-primary mt-1.5 shrink-0">&bull;</span>
                   <span>
                     Built strategic roadmaps with resilience metrics and
-                    regulatory context to align executives on priorities and risk.
+                    regulatory context to align executives on priorities, risk,
+                    and technical direction.
                   </span>
                 </li>
                 <li className="flex gap-2">
                   <span className="text-primary mt-1.5 shrink-0">&bull;</span>
                   <span>
-                    Migrated to ITIL-aligned service management (ServiceNow) with
-                    SLA tiers, escalation paths, and incident/problem/change
-                    governance.
+                    Set engineering standards and ways of working across
+                    distributed teams, improving consistency in delivery,
+                    review, and decision-making.
                   </span>
                 </li>
                 <li className="flex gap-2">

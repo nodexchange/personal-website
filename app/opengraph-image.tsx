@@ -94,7 +94,7 @@ export default async function Image() {
               maxWidth: "700px",
             }}
           >
-            Quality Architect &bull; Global Teams &bull; Innovation Catalyst
+            Hands-On Engineering Leader &bull; Platform Engineering &bull; Global Teams
           </p>
         </div>
       </div>

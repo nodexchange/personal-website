@@ -23,7 +23,7 @@ const manrope = Manrope({
 export const metadata: Metadata = {
   title: "Marcin Wojtala | Engineering Leader",
   description:
-    "Engineering Leader, Quality Architect, and Innovation Catalyst. Building high-performing global teams with a quality-first culture.",
+    "Hands-on engineering leader in financial services, actively coding, shaping technical direction, and building reliable platforms with global teams.",
   keywords: [
     "Engineering Leader",
     "VP Engineering",
@@ -38,7 +38,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Marcin Wojtala | Engineering Leader",
     description:
-      "Engineering Leader, Quality Architect, and Innovation Catalyst. Building high-performing global teams with a quality-first culture.",
+      "Hands-on engineering leader in financial services, actively coding, shaping technical direction, and building reliable platforms with global teams.",
     type: "website",
     siteName: "Marcin Wojtala",
     locale: "en_GB",
@@ -47,7 +47,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Marcin Wojtala | Engineering Leader",
     description:
-      "Engineering Leader, Quality Architect, and Innovation Catalyst. Building high-performing global teams with a quality-first culture.",
+      "Hands-on engineering leader in financial services, actively coding, shaping technical direction, and building reliable platforms with global teams.",
   },
   robots: {
     index: true,

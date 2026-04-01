@@ -16,10 +16,10 @@ const experiences = [
     period: "Dec 2022 - Present",
     location: "London",
     highlights: [
-      "Own the full portfolio management platform ($438B+ AUM) — from target allocation engines and alpha screening to order execution",
-      "Scaled transaction architecture to multi-region, processing 8B+ daily messages through GemFire and distributed caching",
-      "Work directly with quants and portfolio managers to turn investment strategies into reliable, tested software",
-      "Manage global teams across NA, EMEA, and APAC while driving AI-assisted delivery adoption (42% cycle time reduction)",
+      "Lead the end-to-end multi-asset portfolio platform ($438B+ AUM) from target allocation engines and alpha screening to portfolio construction and order execution",
+      "Stay actively involved through coding, pull request reviews, solution design, and architecture decisions across production systems",
+      "Scaled transaction architecture to multi-region, supporting 8B+ daily messages through distributed caching and low-latency replication",
+      "Set technical direction across global teams while sponsoring AI-assisted engineering adoption and stronger engineering standards",
     ],
   },
   {
@@ -82,9 +82,10 @@ export function Experience() {
 
           <FadeIn delay={0.2}>
             <p className="text-muted-foreground max-w-2xl">
-              15+ years building front-end platforms, distributed systems, and
-              the teams behind them &mdash; from creative tooling at Verizon to
-              portfolio management at JPMorgan.
+              15+ years building software, platforms, and engineering teams
+              &mdash; from front-end creative tooling at Verizon to
+              business-critical portfolio systems at JPMorgan, with a
+              consistently hands-on leadership style throughout.
             </p>
           </FadeIn>
         </div>

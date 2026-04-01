@@ -68,16 +68,15 @@ export function Hero() {
             </h1>
 
             <p className="text-base text-muted-foreground mb-5 max-w-xl leading-relaxed">
-              Engineering Leadership &bull; UI Architecture &bull; Microfrontends &bull; Global Teams
+              Hands-On Engineering Leadership &bull; UI Architecture &bull; Platform Engineering &bull; Global Teams
             </p>
 
             <p className="text-base text-muted-foreground mb-4 max-w-2xl">
-              Executive Director at JPMorgan Chase, leading multi-asset portfolio
-              management systems ($438B+ AUM). Started in front-end engineering
-              &mdash; building ad-creative UIs at Verizon, then microfrontend
-              platforms at Bottomline &mdash; and now applying that craft to
-              portfolio construction, order execution, and trading infrastructure
-              across four continents.
+              I&apos;m a hands-on engineering leader who actively codes and stays
+              close to the work, from pull requests and solution design to
+              technical direction and team growth. Today I lead multi-asset
+              portfolio management systems at JPMorgan Chase, supporting $438B+
+              in assets under management across global, high-volume platforms.
             </p>
 
             <p className="text-sm text-muted-foreground mb-6 max-w-2xl">
