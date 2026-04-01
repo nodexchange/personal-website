@@ -144,7 +144,7 @@ export default function WorkshopsPage() {
             <FadeIn delay={0.3}>
               <div className="flex flex-wrap gap-4">
                 <Button size="lg" asChild>
-                  <Link href="mailto:1985mars@gmail.com?subject=Workshop Inquiry">
+                  <Link href="/book?service=workshop">
                     Book a workshop
                   </Link>
                 </Button>
@@ -269,7 +269,7 @@ export default function WorkshopsPage() {
 
               <FadeIn delay={0.3}>
                 <Button size="lg" asChild>
-                  <Link href="mailto:1985mars@gmail.com?subject=Custom Workshop Inquiry">
+                  <Link href="/book?service=custom%20workshop">
                     Discuss your needs
                   </Link>
                 </Button>

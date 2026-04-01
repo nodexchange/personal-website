@@ -2,6 +2,7 @@
 
 import { cn } from "@/lib/utils";
 import { useInView } from "@/hooks/use-in-view";
+import { usePrefersReducedMotion } from "@/hooks";
 
 interface FadeInProps {
   children: React.ReactNode;
@@ -18,6 +19,7 @@ export function FadeIn({
   direction = "up",
   duration = 0.6,
 }: FadeInProps) {
+  const prefersReducedMotion = usePrefersReducedMotion();
   const [ref, isInView] = useInView<HTMLDivElement>({
     threshold: 0.1,
     rootMargin: "-50px",
@@ -36,16 +38,16 @@ export function FadeIn({
     <div
       ref={ref}
       className={cn(
-        "transition-all ease-out",
-        isInView
+        prefersReducedMotion ? "" : "transition-all ease-out",
+        prefersReducedMotion || isInView
           ? "opacity-100 translate-x-0 translate-y-0"
           : `opacity-0 ${directionStyles[direction]}`,
         className
       )}
       style={{
-        transitionDuration: `${duration}s`,
-        transitionDelay: `${delay}s`,
-        willChange: "transform, opacity",
+        transitionDuration: prefersReducedMotion ? "0s" : `${duration}s`,
+        transitionDelay: prefersReducedMotion ? "0s" : `${delay}s`,
+        willChange: prefersReducedMotion ? "auto" : "transform, opacity",
       }}
     >
       {children}

@@ -112,9 +112,7 @@ export default function MentorshipPage() {
             <FadeIn delay={0.3}>
               <div className="flex flex-wrap gap-4">
                 <Button size="lg" asChild>
-                  <Link href="mailto:1985mars@gmail.com?subject=Mentorship Inquiry">
-                    Request a session
-                  </Link>
+                  <Link href="/book?service=mentorship">Request a session</Link>
                 </Button>
                 <Button variant="secondary" size="lg" asChild>
                   <Link href="/#about">Learn more about me</Link>
@@ -222,7 +220,7 @@ export default function MentorshipPage() {
 
               <FadeIn delay={0.2}>
                 <Button size="lg" asChild>
-                  <Link href="mailto:1985mars@gmail.com?subject=Mentorship Inquiry">
+                  <Link href="/book?service=mentorship">
                     Get in touch
                   </Link>
                 </Button>

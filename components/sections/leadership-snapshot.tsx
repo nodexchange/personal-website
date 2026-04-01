@@ -26,7 +26,7 @@ const outcomes = [
 
 const evidence = [
   "Relocated 15 engineers and their families during a sanctions-constrained acquisition, keeping both people safe and delivery on track.",
-  "Ran 6 AI workshops, trained 89% of the team, and reached 62% AI-assisted sprint penetration — tracking quality alongside productivity.",
+  "Ran 6 AI workshops, trained 89% of the team, and reached 62% AI-assisted sprint penetration, tracking quality alongside productivity.",
   "Introduced a weekend dev-environment lightswitch policy that cut infrastructure costs without affecting resilience.",
   "Embedded chaos engineering, contract testing, and performance testing into our DevSecOps pipeline to catch issues before they reached production.",
   "Reduced mean time to recovery by streamlining CI/CD and adding instant rollback through Spinnaker and Kubernetes.",

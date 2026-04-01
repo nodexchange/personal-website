@@ -34,6 +34,9 @@ export function Contact() {
           <FadeIn delay={0.3}>
             <div className="flex flex-wrap justify-center gap-4">
               <Button size="lg" asChild>
+                <Link href="/book">Book a call</Link>
+              </Button>
+              <Button variant="secondary" size="lg" asChild>
                 <Link href="mailto:1985mars@gmail.com">Send an email</Link>
               </Button>
               <Button

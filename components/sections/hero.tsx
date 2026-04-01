@@ -4,7 +4,7 @@ import dynamic from "next/dynamic";
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
 import { Container } from "@/components/layout/container";
-import { useScrollTransform } from "@/hooks";
+import { useScrollTransform, usePrefersReducedMotion } from "@/hooks";
 
 // Dynamically import the 3D scene to avoid SSR issues
 const HeroScene = dynamic(
@@ -20,6 +20,7 @@ const HeroScene = dynamic(
 );
 
 export function Hero() {
+  const prefersReducedMotion = usePrefersReducedMotion();
   const { translateY, opacity } = useScrollTransform({
     maxScroll: 500,
     maxTranslateY: 150,
@@ -27,31 +28,35 @@ export function Hero() {
   });
 
   return (
-    <section className="relative h-screen hero-gradient overflow-hidden">
-      {/* 3D Scene - positioned on the right */}
+    <section className="relative min-h-screen hero-gradient overflow-hidden">
+      {/* 3D Scene: stacked above text on mobile, positioned on the right on desktop */}
       <div
-        className="absolute inset-0 pointer-events-none"
+        className="relative pointer-events-none h-[34vh] min-h-[220px] sm:h-[40vh] lg:absolute lg:inset-0 lg:h-auto"
         style={{
-          willChange: "transform, opacity",
-          transform: `translateY(${translateY * 0.5}px)`,
-          opacity: Math.max(0.3, opacity),
+          willChange: prefersReducedMotion ? "auto" : "transform, opacity",
+          transform: prefersReducedMotion
+            ? "none"
+            : `translateY(${translateY * 0.5}px)`,
+          opacity: prefersReducedMotion ? 1 : Math.max(0.3, opacity),
         }}
       >
-        <div className="absolute top-1/2 right-0 w-full lg:w-1/2 h-[80vh] -translate-y-1/2 lg:translate-x-[10%]">
+        <div className="relative mx-auto h-full w-[85%] lg:absolute lg:top-1/2 lg:right-0 lg:w-1/2 lg:h-[80vh] lg:-translate-y-1/2 lg:translate-x-[10%]">
           <HeroScene />
         </div>
       </div>
 
       {/* Animated content wrapper - translates DOWN as you scroll */}
       <div
-        className="absolute inset-0 flex items-center"
+        className="relative flex items-start lg:absolute lg:inset-0 lg:items-center"
         style={{
-          willChange: "transform, opacity",
-          transform: `perspective(1200px) translateY(${translateY}px)`,
-          opacity,
+          willChange: prefersReducedMotion ? "auto" : "transform, opacity",
+          transform: prefersReducedMotion
+            ? "none"
+            : `perspective(1200px) translateY(${translateY}px)`,
+          opacity: prefersReducedMotion ? 1 : opacity,
         }}
       >
-        <Container className="relative z-10 pt-24 pb-16">
+        <Container className="relative z-10 pt-8 sm:pt-10 lg:pt-24 pb-16">
           <div className="max-w-3xl">
             <h1 className="mb-4 text-[clamp(2.25rem,4vw+0.875rem,3.75rem)]">
               Building the{" "}
@@ -91,7 +96,7 @@ export function Hero() {
                 <Link href="/agentic-playbook">Read the Playbook</Link>
               </Button>
               <Button variant="secondary" size="lg" asChild>
-                <Link href="#contact">Get in touch</Link>
+                <Link href="/book">Book a call</Link>
               </Button>
               <Button variant="outline" size="lg" asChild>
                 <a href="/marcin-wojtala-resume.pdf" download>

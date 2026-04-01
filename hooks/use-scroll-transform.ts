@@ -1,6 +1,7 @@
 "use client";
 
 import { useState, useEffect, useCallback } from "react";
+import { usePrefersReducedMotion } from "./use-prefers-reduced-motion";
 
 interface ScrollTransformOptions {
   /** Maximum scroll distance to track (in pixels) */
@@ -33,8 +34,19 @@ export function useScrollTransform(
     scale: 1,
     progress: 0,
   });
+  const prefersReducedMotion = usePrefersReducedMotion();
 
   const handleScroll = useCallback(() => {
+    if (prefersReducedMotion) {
+      setValues({
+        translateY: 0,
+        opacity: 1,
+        scale: 1,
+        progress: 0,
+      });
+      return;
+    }
+
     const scrollY = window.scrollY;
     const progress = Math.min(scrollY / maxScroll, 1);
 
@@ -44,13 +56,23 @@ export function useScrollTransform(
       scale: 1 - progress * 0.05,
       progress,
     });
-  }, [maxScroll, maxTranslateY, minOpacity]);
+  }, [maxScroll, maxTranslateY, minOpacity, prefersReducedMotion]);
 
   useEffect(() => {
+    if (prefersReducedMotion) {
+      setValues({
+        translateY: 0,
+        opacity: 1,
+        scale: 1,
+        progress: 0,
+      });
+      return;
+    }
+
     handleScroll();
     window.addEventListener("scroll", handleScroll, { passive: true });
     return () => window.removeEventListener("scroll", handleScroll);
-  }, [handleScroll]);
+  }, [handleScroll, prefersReducedMotion]);
 
   return values;
 }

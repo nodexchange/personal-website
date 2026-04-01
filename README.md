@@ -2,6 +2,19 @@ This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-
 
 ## Getting Started
 
+Use `pnpm` for this repo (there is a `pnpm-lock.yaml` lockfile):
+
+```bash
+pnpm install
+pnpm dev
+```
+
+If you are on Windows 11 ARM64 and switch between ARM64 Node and x64 Node (emulation), rerun `pnpm install` after switching architecture so platform-native binaries are refreshed.
+
+This repository intentionally pins `packageManager` and `pnpm.supportedArchitectures`
+in `package.json` to avoid install/compile issues on Windows 11 ARM64 when native
+dependencies are resolved across ARM64 and x64 environments.
+
 First, run the development server:
 
 ```bash
@@ -68,6 +81,19 @@ cmd /c npx md-to-pdf public/marcin-wojtala-resume.md --pdf-options "{\"format\":
 ```
 
 This generates `public/marcin-wojtala-resume.pdf`.
+
+## Booking Link (Optional)
+
+The `/book` page supports a direct calendar CTA.
+
+Set `NEXT_PUBLIC_BOOKING_URL` (for example, a Calendly link) to enable the
+"Open booking calendar" button:
+
+```bash
+NEXT_PUBLIC_BOOKING_URL=https://calendly.com/your-handle/30min
+```
+
+You can copy `.env.example` to `.env` and set the value there for local development.
 
 ## Deploy on Vercel
 

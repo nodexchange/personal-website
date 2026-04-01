@@ -120,7 +120,7 @@ export default function SpeakingPage() {
             <FadeIn delay={0.3}>
               <div className="flex flex-wrap gap-4">
                 <Button size="lg" asChild>
-                  <Link href="mailto:1985mars@gmail.com?subject=Speaking Inquiry">
+                  <Link href="/book?service=speaking">
                     Book for your event
                   </Link>
                 </Button>
@@ -292,7 +292,7 @@ export default function SpeakingPage() {
 
                     <div className="mt-6">
                       <Button asChild>
-                        <Link href="mailto:1985mars@gmail.com?subject=Speaking Inquiry">
+                        <Link href="/book?service=speaking">
                           Inquire about availability
                         </Link>
                       </Button>

@@ -10,6 +10,7 @@ import { ThemeToggle } from "@/components/ui/theme-toggle";
 const navItems = [
   { href: "/#about", label: "About" },
   { href: "/#experience", label: "Experience" },
+  { href: "/book", label: "Book" },
   { href: "/mentorship", label: "Mentorship" },
   { href: "/speaking", label: "Speaking" },
   { href: "/workshops", label: "Workshops" },
@@ -99,30 +100,30 @@ export function Header() {
             <button
               type="button"
               className="relative w-10 h-10 flex items-center justify-center"
-            onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
-            aria-label={isMobileMenuOpen ? "Close menu" : "Open menu"}
-            aria-expanded={isMobileMenuOpen}
-          >
-            <div className="w-6 h-5 relative flex flex-col justify-between">
-              <span
-                className={cn(
-                  "w-full h-0.5 bg-foreground transition-all duration-300 origin-center",
-                  isMobileMenuOpen && "rotate-45 translate-y-[9px]"
-                )}
-              />
-              <span
-                className={cn(
-                  "w-full h-0.5 bg-foreground transition-all duration-300",
-                  isMobileMenuOpen && "opacity-0 scale-0"
-                )}
-              />
-              <span
-                className={cn(
-                  "w-full h-0.5 bg-foreground transition-all duration-300 origin-center",
-                  isMobileMenuOpen && "-rotate-45 -translate-y-[9px]"
-                )}
-              />
-            </div>
+              onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
+              aria-label={isMobileMenuOpen ? "Close menu" : "Open menu"}
+              aria-expanded={isMobileMenuOpen}
+            >
+              <div className="w-6 h-5 relative flex flex-col justify-between">
+                <span
+                  className={cn(
+                    "w-full h-0.5 bg-foreground transition-all duration-300 origin-center",
+                    isMobileMenuOpen && "rotate-45 translate-y-[9px]"
+                  )}
+                />
+                <span
+                  className={cn(
+                    "w-full h-0.5 bg-foreground transition-all duration-300",
+                    isMobileMenuOpen && "opacity-0 scale-0"
+                  )}
+                />
+                <span
+                  className={cn(
+                    "w-full h-0.5 bg-foreground transition-all duration-300 origin-center",
+                    isMobileMenuOpen && "-rotate-45 -translate-y-[9px]"
+                  )}
+                />
+              </div>
             </button>
           </div>
         </Container>
