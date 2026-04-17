@@ -26,12 +26,12 @@ export function PlaybookPromo() {
                   Latest:
                   {" "}
                   <Link
-                    href="https://www.linkedin.com/pulse/agentic-playbook-13-rise-cloud-agents-marcin-wojtala-3fnse"
+                    href="https://www.linkedin.com/pulse/agentic-playbook-14-spec-driven-development-marcin-wojtala-yimwe/"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="text-primary hover:underline"
                   >
-                    Agentic Playbook #13 - The Rise of Cloud Agents
+                    Agentic Playbook #14 - Spec-Driven Development
                   </Link>
                 </p>
               </div>

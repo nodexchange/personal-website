@@ -18,6 +18,17 @@ export const metadata = {
 
 const playbookEntries = [
   {
+    number: "14",
+    title: "Spec-Driven Development",
+    subtitle: "Why Prompt-First Development Does Not Scale",
+    summary:
+      "AI is strong at generating code but far less reliable at inventing constraints. The leverage shifts from prompting faster to defining systems clearly enough that they can be challenged, refined, and built correctly.",
+    tags: ["Specifications", "System Design", "AI Workflow"],
+    url: "https://www.linkedin.com/pulse/agentic-playbook-14-spec-driven-development-marcin-wojtala-yimwe/",
+    type: "article",
+    isNew: true,
+  },
+  {
     number: "13",
     title: "The Rise of Cloud Agents",
     subtitle: "How Intelligent Agents Are Moving from IDE to Infrastructure",
@@ -26,7 +37,6 @@ const playbookEntries = [
     tags: ["Cloud Agents", "Platform Engineering", "AI Strategy"],
     url: "https://www.linkedin.com/pulse/agentic-playbook-13-rise-cloud-agents-marcin-wojtala-3fnse",
     type: "article",
-    isNew: true,
   },
   {
     number: "12",
