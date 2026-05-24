@@ -1,6 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import { Container } from "./container";
+import packageJson from "../../package.json";
 
 const socialLinks = [
   {
@@ -32,6 +33,7 @@ export function Footer() {
             />
             <p className="text-sm text-muted-foreground">
               &copy; {new Date().getFullYear()} Marcin Wojtala. All rights reserved.
+              <span className="ml-2 text-xs opacity-50">v{packageJson.version}</span>
             </p>
           </div>
 

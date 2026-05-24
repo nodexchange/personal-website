@@ -1,6 +1,6 @@
 "use client";
 
-import { Suspense, useState, useEffect } from "react";
+import { Suspense, useState, useEffect, useSyncExternalStore } from "react";
 import { Canvas } from "@react-three/fiber";
 import { WireframeNetwork } from "./wireframe-network";
 import { StarField } from "./star-field";
@@ -24,24 +24,34 @@ function StaticHeroFallback() {
   );
 }
 
+const subscribeToMount = () => () => {};
+const getMountedSnapshot = () => true;
+const getServerSnapshot = () => false;
+
 export function HeroScene() {
   const [isWebGLSupported, setIsWebGLSupported] = useState(true);
-  const [mounted, setMounted] = useState(false);
+  const mounted = useSyncExternalStore(
+    subscribeToMount,
+    getMountedSnapshot,
+    getServerSnapshot
+  );
   const prefersReducedMotion = usePrefersReducedMotion();
 
   useEffect(() => {
-    setMounted(true);
-
-    try {
-      const canvas = document.createElement("canvas");
-      const gl =
-        canvas.getContext("webgl") || canvas.getContext("experimental-webgl");
-      if (!gl) {
+    const frame = window.requestAnimationFrame(() => {
+      try {
+        const canvas = document.createElement("canvas");
+        const gl =
+          canvas.getContext("webgl") || canvas.getContext("experimental-webgl");
+        if (!gl) {
+          setIsWebGLSupported(false);
+        }
+      } catch {
         setIsWebGLSupported(false);
       }
-    } catch {
-      setIsWebGLSupported(false);
-    }
+    });
+
+    return () => window.cancelAnimationFrame(frame);
   }, []);
 
   if (!mounted || !isWebGLSupported || prefersReducedMotion) {

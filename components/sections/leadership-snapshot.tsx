@@ -2,7 +2,8 @@ import { Container } from "@/components/layout/container";
 import { FadeIn } from "@/components/ui/fade-in";
 
 const pillars = [
-  "Hands-on technical leadership",
+  "Engineering Director operating model",
+  "Product engineering direction",
   "Technical direction and standards",
   "UI architecture and microfrontend design",
   "Resilience and security by design",
@@ -54,8 +55,8 @@ export function LeadershipSnapshot() {
           <FadeIn delay={0.2}>
             <p className="text-muted-foreground max-w-2xl">
               I lead from within the work, combining active technical
-              contribution with clear standards, strong teams, and reliable
-              delivery at scale.
+              contribution with product judgment, clear standards, strong teams,
+              and reliable delivery at scale.
             </p>
           </FadeIn>
         </div>

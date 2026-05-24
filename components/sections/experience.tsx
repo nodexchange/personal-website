@@ -19,7 +19,7 @@ const experiences = [
       "Lead the end-to-end multi-asset portfolio platform ($438B+ AUM) from target allocation engines and alpha screening to portfolio construction and order execution",
       "Stay actively involved through coding, pull request reviews, solution design, and architecture decisions across production systems",
       "Scaled transaction architecture to multi-region, supporting 8B+ daily messages through distributed caching and low-latency replication",
-      "Set technical direction across global teams while sponsoring AI-assisted engineering adoption and stronger engineering standards",
+      "Set product engineering and technical direction across global teams while sponsoring AI-assisted engineering adoption and stronger engineering standards",
     ],
   },
   {
@@ -76,13 +76,13 @@ export function Experience() {
             <h2 className="mb-4">
               From ad-tech UIs to
               <br />
-              trading systems.
+              investment platforms.
             </h2>
           </FadeIn>
 
           <FadeIn delay={0.2}>
             <p className="text-muted-foreground max-w-2xl">
-              15+ years building software, platforms, and engineering teams
+              15+ years building software, product platforms, and engineering teams
               &mdash; from front-end creative tooling at Verizon to
               business-critical portfolio systems at JPMorgan, with a
               consistently hands-on leadership style throughout.

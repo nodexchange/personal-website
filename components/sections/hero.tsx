@@ -59,24 +59,25 @@ export function Hero() {
         <Container className="relative z-10 pt-8 sm:pt-10 lg:pt-24 pb-16">
           <div className="max-w-3xl">
             <h1 className="mb-4 text-[clamp(2.25rem,4vw+0.875rem,3.75rem)]">
-              Building the{" "}
-              <span className="text-primary">UI and platform</span>
+              Engineering Director for{" "}
+              <span className="text-primary">investment platforms</span>,
               <br />
-              systems behind global
+              product engineering,
               <br />
-              finance.
+              and safe AI delivery.
             </h1>
 
             <p className="text-base text-muted-foreground mb-5 max-w-xl leading-relaxed">
-              Hands-On Engineering Leadership &bull; UI Architecture &bull; Platform Engineering &bull; Global Teams
+              Asset Management Platforms &bull; Product Engineering &bull; DevSecOps &bull; Agentic Engineering
             </p>
 
             <p className="text-base text-muted-foreground mb-4 max-w-2xl">
-              I&apos;m a hands-on engineering leader who actively codes and stays
-              close to the work, from pull requests and solution design to
-              technical direction and team growth. Today I lead multi-asset
-              portfolio management systems at JPMorgan Chase, supporting $438B+
-              in assets under management across global, high-volume platforms.
+              I lead regulated software delivery across Asset Management
+              investment platforms, combining hands-on technical judgment with
+              product engineering, global team leadership, and resilient
+              operating models. Today I lead multi-asset portfolio management
+              systems at JPMorgan Chase, supporting $438B+ in assets under
+              management across global, high-volume platforms.
             </p>
 
             <p className="text-sm text-muted-foreground mb-6 max-w-2xl">

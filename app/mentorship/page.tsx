@@ -64,21 +64,6 @@ const mentorshipAreas = [
   },
 ];
 
-const testimonials = [
-  {
-    quote:
-      "Marcin's guidance helped me transition from senior developer to engineering manager. His practical advice on team dynamics was invaluable.",
-    author: "Senior Engineering Manager",
-    company: "FinTech Startup",
-  },
-  {
-    quote:
-      "The mentorship sessions on quality engineering transformed how our team approaches testing. We've seen a 40% reduction in production incidents.",
-    author: "Lead Developer",
-    company: "Enterprise SaaS",
-  },
-];
-
 export default function MentorshipPage() {
   return (
     <>
@@ -172,34 +157,7 @@ export default function MentorshipPage() {
           </Container>
         </section>
 
-        {/* Testimonials */}
-        <section className="section-padding bg-secondary/30">
-          <Container>
-            <FadeIn>
-              <h2 className="mb-12 text-center">What mentees say</h2>
-            </FadeIn>
-
-            <div className="grid gap-8 md:grid-cols-2 max-w-4xl mx-auto">
-              {testimonials.map((testimonial, index) => (
-                <FadeIn key={index} delay={0.1 + index * 0.1}>
-                  <blockquote className="p-6 rounded-lg bg-card border border-border/50">
-                    <p className="text-muted-foreground mb-4 italic">
-                      &ldquo;{testimonial.quote}&rdquo;
-                    </p>
-                    <footer>
-                      <p className="font-medium text-foreground">
-                        {testimonial.author}
-                      </p>
-                      <p className="text-sm text-muted-foreground">
-                        {testimonial.company}
-                      </p>
-                    </footer>
-                  </blockquote>
-                </FadeIn>
-              ))}
-            </div>
-          </Container>
-        </section>
+        {/* Testimonials are parked until current references are ready. */}
 
         {/* Playbook Promo */}
         <PlaybookPromo />

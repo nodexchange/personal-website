@@ -1,6 +1,5 @@
 export const SERVICE_OPTIONS = [
   "Mentorship",
-  "Speaking",
   "Workshop",
   "Custom workshop",
   "Advisory",
@@ -16,9 +15,6 @@ export function normalizeService(input: string | null) {
   const aliasMap: Record<string, string> = {
     mentorship: "Mentorship",
     mentor: "Mentorship",
-    speaking: "Speaking",
-    talks: "Speaking",
-    talk: "Speaking",
     workshop: "Workshop",
     workshops: "Workshop",
     "custom workshop": "Custom workshop",

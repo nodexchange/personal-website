@@ -38,9 +38,9 @@ export function About() {
 
             <FadeIn delay={0.1}>
               <h2 className="mb-6">
-                From UI components to
+                From product surfaces to
                 <br />
-                trading infrastructure.
+                investment infrastructure.
               </h2>
             </FadeIn>
 
@@ -51,8 +51,8 @@ export function About() {
                   ad-creative front-ends at Verizon Media to microfrontend and
                   payment platform teams at Bottomline Technologies. That
                   foundation in UI architecture still shapes how I think about
-                  systems: close to the user, close to the code, and deliberate
-                  about how teams build.
+                  product engineering systems: close to the user, close to the
+                  code, and deliberate about how teams build.
                 </p>
 
                 <p>
@@ -69,13 +69,14 @@ export function About() {
 
                 <p>
                   My leadership style is hands-on and engaged: aligning people,
-                  technology, and outcomes through clear standards, pragmatic
-                  technical choices, and ways of working that help teams deliver
-                  reliable software at scale. On the technical side, I work
-                  across event-driven architecture, distributed caching,
-                  multi-region replication, AWS infrastructure, and resilience
-                  practices including chaos engineering, contract testing, and
-                  Infrastructure as Code with Terraform.
+                  product direction, technology, and outcomes through clear
+                  standards, pragmatic technical choices, and ways of working
+                  that help teams deliver reliable software at scale. On the
+                  technical side, I work across event-driven architecture,
+                  distributed caching, multi-region replication, AWS
+                  infrastructure, and resilience practices including chaos
+                  engineering, contract testing, and Infrastructure as Code with
+                  Terraform.
                 </p>
               </div>
             </FadeIn>

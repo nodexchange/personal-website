@@ -59,19 +59,17 @@ export function useScrollTransform(
   }, [maxScroll, maxTranslateY, minOpacity, prefersReducedMotion]);
 
   useEffect(() => {
+    const frame = window.requestAnimationFrame(handleScroll);
+
     if (prefersReducedMotion) {
-      setValues({
-        translateY: 0,
-        opacity: 1,
-        scale: 1,
-        progress: 0,
-      });
-      return;
+      return () => window.cancelAnimationFrame(frame);
     }
 
-    handleScroll();
     window.addEventListener("scroll", handleScroll, { passive: true });
-    return () => window.removeEventListener("scroll", handleScroll);
+    return () => {
+      window.cancelAnimationFrame(frame);
+      window.removeEventListener("scroll", handleScroll);
+    };
   }, [handleScroll, prefersReducedMotion]);
 
   return values;

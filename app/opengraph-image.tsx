@@ -2,7 +2,7 @@ import { ImageResponse } from "next/og";
 
 export const runtime = "edge";
 
-export const alt = "Marcin Wojtala - Engineering Leader";
+export const alt = "Marcin Wojtala - Engineering Director";
 export const size = {
   width: 1200,
   height: 630,
@@ -70,7 +70,7 @@ export default async function Image() {
               letterSpacing: "0.05em",
             }}
           >
-            Engineering Leader
+            Engineering Director
           </span>
           <h1
             style={{
@@ -94,7 +94,7 @@ export default async function Image() {
               maxWidth: "700px",
             }}
           >
-            Hands-On Engineering Leader &bull; Platform Engineering &bull; Global Teams
+            Investment Platforms &bull; Product Engineering &bull; Agentic Delivery
           </p>
         </div>
       </div>

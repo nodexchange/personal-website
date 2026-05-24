@@ -12,7 +12,6 @@ const navItems = [
   { href: "/#experience", label: "Experience" },
   { href: "/book", label: "Book" },
   { href: "/mentorship", label: "Mentorship" },
-  { href: "/speaking", label: "Speaking" },
   { href: "/workshops", label: "Workshops" },
   { href: "/stack", label: "Stack" },
 ];

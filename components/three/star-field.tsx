@@ -10,6 +10,11 @@ interface StarFieldProps {
   radius?: number;
 }
 
+const seededRandom = (seed: number) => {
+  const value = Math.sin(seed * 12.9898) * 43758.5453;
+  return value - Math.floor(value);
+};
+
 export function StarField({ count = 200, radius = 15 }: StarFieldProps) {
   const pointsRef = useRef<THREE.Points>(null);
   const { resolvedTheme } = useTheme();
@@ -24,16 +29,16 @@ export function StarField({ count = 200, radius = 15 }: StarFieldProps) {
 
     for (let i = 0; i < count; i++) {
       // Distribute stars in a sphere, biased toward the back
-      const theta = Math.random() * Math.PI * 2;
-      const phi = Math.acos(2 * Math.random() - 1);
-      const r = radius * (0.5 + Math.random() * 0.5);
+      const theta = seededRandom(i * 4 + 1) * Math.PI * 2;
+      const phi = Math.acos(2 * seededRandom(i * 4 + 2) - 1);
+      const r = radius * (0.5 + seededRandom(i * 4 + 3) * 0.5);
 
       positions[i * 3] = r * Math.sin(phi) * Math.cos(theta);
       positions[i * 3 + 1] = r * Math.sin(phi) * Math.sin(theta) * 0.6; // Flatten vertically
       positions[i * 3 + 2] = -Math.abs(r * Math.cos(phi)) - 2; // Push to back
 
       // Vary star sizes
-      sizes[i] = Math.random() * 2 + 0.5;
+      sizes[i] = seededRandom(i * 4 + 4) * 2 + 0.5;
     }
 
     return { positions, sizes };

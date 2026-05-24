@@ -1,4 +1,6 @@
 export const expertise = [
+  "Product Engineering",
+  "Investment Platforms",
   "UI Architecture & Microfrontends",
   "React / TypeScript / Next.js",
   "Portfolio Management Systems",
@@ -6,7 +8,7 @@ export const expertise = [
   "Distributed Caching & Replication",
   "AWS / EKS / Lambda",
   "Infrastructure as Code",
-  "AI-Augmented Delivery",
+  "Safe Agentic Engineering",
   "Resilience Engineering",
   "Global Team Leadership",
 ];

@@ -18,16 +18,17 @@ export function Contact() {
 
           <FadeIn delay={0.1}>
             <h2 className="mb-6">
-              Exploring next
+              Exploring Engineering Director
               <br />
-              challenges.
+              opportunities.
             </h2>
           </FadeIn>
 
           <FadeIn delay={0.2}>
             <p className="text-lg text-muted-foreground mb-10 max-w-xl mx-auto">
-              Interested in discussing engineering leadership, UI architecture,
-              or potential collaborations? I&apos;d love to hear from you.
+              Interested in regulated product engineering, investment platforms,
+              safe AI-assisted delivery, or global engineering leadership? I&apos;d
+              love to hear from you.
             </p>
           </FadeIn>
 

@@ -21,13 +21,16 @@ const manrope = Manrope({
 });
 
 export const metadata: Metadata = {
-  title: "Marcin Wojtala | Engineering Leader",
+  title: "Marcin Wojtala | Engineering Director",
   description:
-    "Hands-on engineering leader in financial services, actively coding, shaping technical direction, and building reliable platforms with global teams.",
+    "Engineering Director for regulated investment platforms, global product engineering teams, DevSecOps delivery, and safe AI-assisted engineering adoption.",
   keywords: [
-    "Engineering Leader",
+    "Engineering Director",
     "VP Engineering",
     "Head of Engineering",
+    "Product Engineering",
+    "Investment Platforms",
+    "Asset Management",
     "Quality Engineering",
     "Chaos Engineering",
     "Agentic Development",
@@ -36,18 +39,18 @@ export const metadata: Metadata = {
   authors: [{ name: "Marcin Wojtala" }],
   metadataBase: new URL("https://marcinwojtala.vercel.app"),
   openGraph: {
-    title: "Marcin Wojtala | Engineering Leader",
+    title: "Marcin Wojtala | Engineering Director",
     description:
-      "Hands-on engineering leader in financial services, actively coding, shaping technical direction, and building reliable platforms with global teams.",
+      "Engineering Director for regulated investment platforms, global product engineering teams, DevSecOps delivery, and safe AI-assisted engineering adoption.",
     type: "website",
     siteName: "Marcin Wojtala",
     locale: "en_GB",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Marcin Wojtala | Engineering Leader",
+    title: "Marcin Wojtala | Engineering Director",
     description:
-      "Hands-on engineering leader in financial services, actively coding, shaping technical direction, and building reliable platforms with global teams.",
+      "Engineering Director for regulated investment platforms, global product engineering teams, DevSecOps delivery, and safe AI-assisted engineering adoption.",
   },
   robots: {
     index: true,
