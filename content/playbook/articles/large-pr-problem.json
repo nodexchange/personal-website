@@ -1,0 +1,163 @@
+{
+  "number": "15",
+  "series": "Agentic Playbook",
+  "slug": "large-pr-problem",
+  "title": "The Large PR Problem",
+  "subtitle": "Reviewability-Driven Development in the AI Era",
+  "summary": "AI has accelerated code generation, but review practices have not evolved at the same pace. This article explores large AI-generated PRs, architectural hotzones, review fatigue, and why reviewability is becoming a primary engineering constraint.",
+  "themes": [
+    "Quality & Safety",
+    "Engineering Leadership in the AI Era",
+    "Talent & Cognitive Health"
+  ],
+  "tags": [
+    "Code Review",
+    "Reviewability",
+    "AI Engineering",
+    "Software Architecture",
+    "Pull Requests",
+    "Developer Experience"
+  ],
+  "difficulty": "Leadership",
+  "sourceType": "article",
+  "publishedAt": "2026-05-22",
+  "readingTime": "5 min read",
+  "related": [
+    "spec-driven-development",
+    "dont-let-the-tool-think-for-you",
+    "seamless-refactors"
+  ],
+  "body": [
+    "Do you also find yourself navigating a vast sea of pull requests every morning? This week, I spent some time reading GitHub's guidance on reviewing AI-generated code and human oversight in modern code review.",
+    "One observation stood out immediately: AI has dramatically accelerated code generation, but code review practices have not evolved at the same pace.",
+    "For years, engineering organisations focused on removing delivery bottlenecks through better CI/CD, automated testing, cloud-native infrastructure, and deployment automation. AI has now introduced another major acceleration layer.",
+    "Modern agents can refactor entire modules, regenerate architectural patterns, migrate dependencies, rewrite infrastructure definitions, and produce thousands of lines of code in minutes. While this is incredibly powerful, it has also introduced a new operational challenge that many teams are only beginning to experience properly.",
+    "Traditionally, very large pull requests were already considered risky. In the AI era, they are becoming increasingly normalised.",
+    "The issue is not necessarily the quality of the generated code itself. In many cases, the output is surprisingly good. The real challenge is that AI scales code generation much faster than human review capacity.",
+    "A single AI-assisted session can now mutate dozens of files, combine architectural refactors with functional changes, regenerate tests, update dependencies, and modify infrastructure definitions simultaneously. The result is often a pull request that technically compiles, passes tests, and appears structurally sound while quietly increasing operational risk underneath.",
+    "When reviewers are faced with thousands of changed lines spread across dozens of files, the brain naturally shifts from deep reasoning into pattern scanning. At that point, subtle defects, hidden regressions, architectural drift, insecure assumptions, and behavioural inconsistencies become dramatically harder to detect.",
+    "Perhaps most dangerously, reviewers slowly transition from active engineering thinking into passive approval behaviour.",
+    "The bottleneck is no longer writing code. It is safely understanding it.",
+    "Historically, engineering teams optimised heavily for implementation speed and delivery throughput. But if code generation becomes nearly instantaneous, then entirely new qualities become critically important: reviewability, explainability, reversibility, and architectural traceability.",
+    "Historically, technical debt accumulated at roughly the speed humans could write software. AI fundamentally changes that equation.",
+    "This is why I increasingly believe we need to think in terms of Reviewability-Driven Development. Code should not only be easy to generate. It should be easy to reason about, validate, isolate, review, and safely rollback, especially in large-scale engineering systems where AI-generated changes can propagate extremely quickly.",
+    "One particularly important lesson emerging from AI-assisted delivery is that not all parts of a system carry equal operational risk.",
+    "Authentication flows, payment systems, infrastructure provisioning, migrations, concurrency handling, caching layers, and permission boundaries all represent what I often refer to as architectural hotzones: areas where seemingly small implementation mistakes can quickly evolve into major incidents.",
+    "As AI agents become capable of mutating broad areas of a codebase simultaneously, understanding these zones becomes increasingly important. One of the healthier practices I've started adopting is explicitly informing agents when they are operating inside sensitive parts of the system, while simultaneously increasing the expected depth of human review in those areas.",
+    "The same thinking increasingly applies to areas of impact. Before large AI-assisted changes are even generated, engineering teams should understand which systems are affected, which teams own them, what downstream behaviours may shift, and what rollback strategies exist if assumptions prove incorrect later.",
+    "Another major mindset shift I've personally adopted is that we should not only prompt AI to generate code. We should prompt AI to generate reviewable change sets.",
+    "Instead of asking an agent to refactor an authentication module in broad terms, I increasingly prefer prompts such as: 'Refactor incrementally. Keep PRs under 300 LOC. Separate formatting from behavioural changes. Explain architectural decisions. Flag risky assumptions. Highlight security-sensitive files. Commit progressively.'",
+    "That single shift dramatically improves reviewer confidence, rollback safety, traceability, and reasoning clarity. In many ways, prompts are evolving into operational governance instructions.",
+    "Another subtle but increasingly important practice in AI-assisted development is progressive commit discipline.",
+    "Modern agents naturally tend toward broad mutations unless constrained carefully. Without clear commit boundaries, understanding the evolution of a change becomes significantly harder, especially once multiple architectural concerns begin blending together inside the same pull request.",
+    "I've found that smaller, progressively structured commits dramatically improve both reviewability and rollback safety. They also create something surprisingly valuable in the AI era: a readable narrative of how the system evolved over time.",
+    "Simple conventions such as feat(auth): introduce token validation middleware, refactor(payments): isolate retry policy, and test(api): add e2e coverage for rate limits become far more than historical checkpoints. They become reasoning breadcrumbs for future engineers trying to understand why changes happened in the first place.",
+    "One of the most fascinating trends emerging right now is the rise of AI-powered review systems.",
+    "Modern tooling can already analyse pull requests semantically rather than purely through line diffs. It can identify insecure patterns, architectural inconsistencies, risky dependencies, hidden behavioural changes, and suspicious implementation drift before a human reviewer even begins inspecting the PR.",
+    "This is incredibly valuable, but I suspect the long-term evolution lies elsewhere. Today, much of this intelligence still activates during PR review. Tomorrow, I believe we will increasingly shift this capability further left during local execution, incremental generation, pre-commit workflows, and agent execution phases.",
+    "The earlier feedback loops occur, the safer large-scale AI-assisted engineering becomes. Ideally, risky architectural drift should be identified before PR creation, insecure assumptions should be constrained before publication, and review friction should be reduced before another engineer is asked to reason through thousands of generated lines.",
+    "There is also a people dimension to this conversation that I believe deserves significantly more attention.",
+    "As AI accelerates software delivery, many engineers are quietly transitioning away from deep implementation thinking and toward continuously reviewing and validating AI-generated change sets.",
+    "At small scale, this feels productive. At larger scale, however, it can become cognitively exhausting.",
+    "Reviewing thousands of generated lines across multiple pull requests every week requires intense concentration while often providing far less creative engagement than designing and building systems directly. Over time, this can create fatigue, disengagement, reduced ownership, weaker system understanding, and a growing disconnect between engineers and the systems they are responsible for maintaining.",
+    "This is not simply a tooling problem. It is a leadership challenge. If organisations optimise purely for generation speed without evolving review workflows, architectural governance, change isolation, and sustainable engineering practices, we risk creating environments where developers increasingly feel like passive reviewers rather than active engineers.",
+    "The goal should not be replacing engineering thinking. The goal should be amplifying it sustainably.",
+    "Perhaps the future of engineering quality will not depend on how quickly we generate code, but on how effectively we constrain, review, and evolve it safely over time.",
+    "AI has fundamentally accelerated software delivery. Now engineering leadership must evolve just as quickly to ensure quality remains sustainable, architecture remains understandable, teams remain engaged, and engineers continue thinking deeply about the systems they are responsible for building.",
+    "Because the future of engineering may not belong to the teams that generate the most code. It may belong to the teams that can still understand, review, and evolve it safely."
+  ],
+  "sections": [
+    {
+      "heading": "Introduction",
+      "content": [
+        "Do you also find yourself navigating a vast sea of pull requests every morning? This week, I spent some time reading GitHub's guidance on reviewing AI-generated code and human oversight in modern code review.",
+        "One observation stood out immediately: AI has dramatically accelerated code generation, but code review practices have not evolved at the same pace.",
+        "For years, engineering organisations focused on removing delivery bottlenecks through better CI/CD, automated testing, cloud-native infrastructure, and deployment automation. AI has now introduced another major acceleration layer.",
+        "Modern agents can refactor entire modules, regenerate architectural patterns, migrate dependencies, rewrite infrastructure definitions, and produce thousands of lines of code in minutes. While this is incredibly powerful, it has also introduced a new operational challenge that many teams are only beginning to experience properly."
+      ]
+    },
+    {
+      "heading": "The Large PR Problem",
+      "content": [
+        "Traditionally, very large pull requests were already considered risky. In the AI era, they are becoming increasingly normalised.",
+        "The issue is not necessarily the quality of the generated code itself. In many cases, the output is surprisingly good. The real challenge is that AI scales code generation much faster than human review capacity.",
+        "A single AI-assisted session can now mutate dozens of files, combine architectural refactors with functional changes, regenerate tests, update dependencies, and modify infrastructure definitions simultaneously. The result is often a pull request that technically compiles, passes tests, and appears structurally sound while quietly increasing operational risk underneath.",
+        "When reviewers are faced with thousands of changed lines spread across dozens of files, the brain naturally shifts from deep reasoning into pattern scanning. At that point, subtle defects, hidden regressions, architectural drift, insecure assumptions, and behavioural inconsistencies become dramatically harder to detect.",
+        "Perhaps most dangerously, reviewers slowly transition from active engineering thinking into passive approval behaviour."
+      ]
+    },
+    {
+      "heading": "Reviewability-Driven Development",
+      "content": [
+        "The bottleneck is no longer writing code. It is safely understanding it.",
+        "Historically, engineering teams optimised heavily for implementation speed and delivery throughput. But if code generation becomes nearly instantaneous, then entirely new qualities become critically important: reviewability, explainability, reversibility, and architectural traceability.",
+        "Historically, technical debt accumulated at roughly the speed humans could write software. AI fundamentally changes that equation.",
+        "This is why I increasingly believe we need to think in terms of Reviewability-Driven Development. Code should not only be easy to generate. It should be easy to reason about, validate, isolate, review, and safely rollback, especially in large-scale engineering systems where AI-generated changes can propagate extremely quickly."
+      ]
+    },
+    {
+      "heading": "Architectural Hotzones and Areas of Impact",
+      "content": [
+        "One particularly important lesson emerging from AI-assisted delivery is that not all parts of a system carry equal operational risk.",
+        "Authentication flows, payment systems, infrastructure provisioning, migrations, concurrency handling, caching layers, and permission boundaries all represent what I often refer to as architectural hotzones: areas where seemingly small implementation mistakes can quickly evolve into major incidents.",
+        "As AI agents become capable of mutating broad areas of a codebase simultaneously, understanding these zones becomes increasingly important. One of the healthier practices I've started adopting is explicitly informing agents when they are operating inside sensitive parts of the system, while simultaneously increasing the expected depth of human review in those areas.",
+        "The same thinking increasingly applies to areas of impact. Before large AI-assisted changes are even generated, engineering teams should understand which systems are affected, which teams own them, what downstream behaviours may shift, and what rollback strategies exist if assumptions prove incorrect later."
+      ]
+    },
+    {
+      "heading": "Prompting for Reviewability",
+      "content": [
+        "Another major mindset shift I've personally adopted is that we should not only prompt AI to generate code. We should prompt AI to generate reviewable change sets.",
+        "Instead of asking an agent to refactor an authentication module in broad terms, I increasingly prefer prompts such as: 'Refactor incrementally. Keep PRs under 300 LOC. Separate formatting from behavioural changes. Explain architectural decisions. Flag risky assumptions. Highlight security-sensitive files. Commit progressively.'",
+        "That single shift dramatically improves reviewer confidence, rollback safety, traceability, and reasoning clarity. In many ways, prompts are evolving into operational governance instructions."
+      ]
+    },
+    {
+      "heading": "Progressive Commit Discipline",
+      "content": [
+        "Another subtle but increasingly important practice in AI-assisted development is progressive commit discipline.",
+        "Modern agents naturally tend toward broad mutations unless constrained carefully. Without clear commit boundaries, understanding the evolution of a change becomes significantly harder, especially once multiple architectural concerns begin blending together inside the same pull request.",
+        "I've found that smaller, progressively structured commits dramatically improve both reviewability and rollback safety. They also create something surprisingly valuable in the AI era: a readable narrative of how the system evolved over time.",
+        "Simple conventions such as feat(auth): introduce token validation middleware, refactor(payments): isolate retry policy, and test(api): add e2e coverage for rate limits become far more than historical checkpoints. They become reasoning breadcrumbs for future engineers trying to understand why changes happened in the first place."
+      ]
+    },
+    {
+      "heading": "AI Review and the Shift Left Opportunity",
+      "content": [
+        "One of the most fascinating trends emerging right now is the rise of AI-powered review systems.",
+        "Modern tooling can already analyse pull requests semantically rather than purely through line diffs. It can identify insecure patterns, architectural inconsistencies, risky dependencies, hidden behavioural changes, and suspicious implementation drift before a human reviewer even begins inspecting the PR.",
+        "This is incredibly valuable, but I suspect the long-term evolution lies elsewhere. Today, much of this intelligence still activates during PR review. Tomorrow, I believe we will increasingly shift this capability further left during local execution, incremental generation, pre-commit workflows, and agent execution phases.",
+        "The earlier feedback loops occur, the safer large-scale AI-assisted engineering becomes. Ideally, risky architectural drift should be identified before PR creation, insecure assumptions should be constrained before publication, and review friction should be reduced before another engineer is asked to reason through thousands of generated lines."
+      ]
+    },
+    {
+      "heading": "The Human Cost We Should Not Ignore",
+      "content": [
+        "There is also a people dimension to this conversation that I believe deserves significantly more attention.",
+        "As AI accelerates software delivery, many engineers are quietly transitioning away from deep implementation thinking and toward continuously reviewing and validating AI-generated change sets.",
+        "At small scale, this feels productive. At larger scale, however, it can become cognitively exhausting.",
+        "Reviewing thousands of generated lines across multiple pull requests every week requires intense concentration while often providing far less creative engagement than designing and building systems directly. Over time, this can create fatigue, disengagement, reduced ownership, weaker system understanding, and a growing disconnect between engineers and the systems they are responsible for maintaining.",
+        "This is not simply a tooling problem. It is a leadership challenge. If organisations optimise purely for generation speed without evolving review workflows, architectural governance, change isolation, and sustainable engineering practices, we risk creating environments where developers increasingly feel like passive reviewers rather than active engineers.",
+        "The goal should not be replacing engineering thinking. The goal should be amplifying it sustainably."
+      ]
+    },
+    {
+      "heading": "Final Thought",
+      "content": [
+        "Perhaps the future of engineering quality will not depend on how quickly we generate code, but on how effectively we constrain, review, and evolve it safely over time.",
+        "AI has fundamentally accelerated software delivery. Now engineering leadership must evolve just as quickly to ensure quality remains sustainable, architecture remains understandable, teams remain engaged, and engineers continue thinking deeply about the systems they are responsible for building.",
+        "Because the future of engineering may not belong to the teams that generate the most code. It may belong to the teams that can still understand, review, and evolve it safely."
+      ]
+    }
+  ],
+  "references": [
+    {
+      "title": "Review AI-generated code - GitHub Docs",
+      "url": "https://docs.github.com/en/copilot/tutorials/review-ai-generated-code"
+    },
+    {
+      "title": "Human oversight in modern code review - GitHub Insights",
+      "url": "https://github.com/resources/insights/human-oversight-modern-code-review"
+    }
+  ]
+}
