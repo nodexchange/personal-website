@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { Linkedin } from "lucide-react";
 import { Header, Footer, Container } from "@/components/layout";
 import { Button } from "@/components/ui/button";
 import { FadeIn } from "@/components/ui/fade-in";
@@ -77,12 +78,13 @@ export default function AgenticPlaybookPage() {
                 <Button size="lg" asChild>
                   <Link href="#entries">Read the series</Link>
                 </Button>
-                <Button variant="secondary" size="lg" asChild>
+                <Button variant="linkedin" size="lg" asChild>
                   <Link
                     href="https://www.linkedin.com/in/martinwojtala/"
                     target="_blank"
                     rel="noopener noreferrer"
                   >
+                    <Linkedin className="w-4 h-4" />
                     Follow on LinkedIn
                   </Link>
                 </Button>

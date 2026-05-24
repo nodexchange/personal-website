@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
+import { Linkedin } from "lucide-react";
 import { Header, Footer, Container } from "@/components/layout";
 import { Button } from "@/components/ui/button";
 import { FadeIn } from "@/components/ui/fade-in";
@@ -278,12 +279,13 @@ export default async function PlaybookArticlePage({
                         Read the original post there, or continue with the local
                         version here.
                       </p>
-                      <Button variant="outline" asChild>
+                      <Button variant="linkedin" asChild>
                         <Link
                           href={entry.sourceUrl}
                           target="_blank"
                           rel="noopener noreferrer"
                         >
+                          <Linkedin className="w-4 h-4" />
                           Read on LinkedIn
                         </Link>
                       </Button>

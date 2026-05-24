@@ -15,6 +15,8 @@ const buttonVariants = cva(
           "bg-transparent text-foreground border border-transparent rounded-full hover:text-foreground/70 hover:scale-[1.02] active:scale-[0.98]",
         outline:
           "bg-transparent text-foreground border border-border rounded-full hover:bg-white/5 hover:scale-[1.02] active:scale-[0.98]",
+        linkedin:
+          "bg-[#0A66C2] text-white border border-[#0A66C2] rounded-full hover:bg-[#004182] hover:border-[#004182] hover:text-white hover:scale-[1.02] active:scale-[0.98]",
         ghost:
           "bg-transparent text-foreground hover:text-foreground/70 rounded-full",
         link: "text-foreground underline-offset-4 hover:underline",

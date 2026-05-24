@@ -40,17 +40,13 @@ export function Contact() {
               <Button variant="secondary" size="lg" asChild>
                 <Link href="mailto:1985mars@gmail.com">Send an email</Link>
               </Button>
-              <Button
-                size="lg"
-                asChild
-                className="bg-[#0A66C2] hover:bg-[#004182] text-white"
-              >
+              <Button variant="linkedin" size="lg" asChild>
                 <Link
                   href="https://www.linkedin.com/in/martinwojtala/"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  <Linkedin className="w-4 h-4 mr-2" />
+                  <Linkedin className="w-4 h-4" />
                   Connect on LinkedIn
                 </Link>
               </Button>
