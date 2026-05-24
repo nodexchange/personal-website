@@ -4,9 +4,9 @@ import { BookingSection } from "@/components/sections/booking";
 import { normalizeService } from "@/lib/booking";
 
 export const metadata: Metadata = {
-  title: "Book a Call | Marcin Wojtala",
+  title: "Work With Me | Marcin Wojtala",
   description:
-    "Book a call or send a short brief for mentorship, workshops, product engineering, agentic engineering, and engineering leadership advisory work.",
+    "Schedule a call or send a short brief for mentorship, workshops, product engineering, agentic engineering, and engineering leadership advisory work.",
 };
 
 interface BookPageProps {

@@ -36,7 +36,7 @@ const blogStructuredData = {
   },
   blogPost: playbookEntries.map((entry) => ({
     "@type": "BlogPosting",
-    headline: `Agentic Playbook #${entry.number}: ${entry.title}`,
+    headline: `${entry.series} #${entry.number}: ${entry.title}`,
     description: entry.summary,
     url: `https://marcinwojtala.vercel.app${getPlaybookPath(entry)}`,
     datePublished: entry.publishedAt,
@@ -60,7 +60,7 @@ export default function AgenticPlaybookPage() {
               <h1 className="mb-6 max-w-3xl">
                 The Agentic
                 <br />
-                Playbook.
+                Playbook
               </h1>
             </FadeIn>
 
@@ -157,11 +157,21 @@ export default function AgenticPlaybookPage() {
                                 </span>
                               )}
                               <span className="text-xs text-muted-foreground bg-secondary px-2 py-0.5 rounded">
-                                {entry.sourceType}
+                                {entry.series}
                               </span>
+                              {entry.difficulty ? (
+                                <span className="text-xs text-muted-foreground bg-secondary px-2 py-0.5 rounded">
+                                  {entry.difficulty}
+                                </span>
+                              ) : null}
                               {entry.publishedAt ? (
                                 <span className="text-xs text-muted-foreground">
                                   {formatPlaybookDate(entry.publishedAt)}
+                                </span>
+                              ) : null}
+                              {entry.readingTime ? (
+                                <span className="text-xs text-muted-foreground">
+                                  {entry.readingTime}
                                 </span>
                               ) : null}
                             </div>
@@ -175,6 +185,16 @@ export default function AgenticPlaybookPage() {
                         <p className="text-muted-foreground mb-4 text-sm">
                           {entry.summary}
                         </p>
+                        <div className="flex flex-wrap gap-2 mb-3">
+                          {entry.themes.map((theme) => (
+                            <span
+                              key={theme}
+                              className="text-xs px-2 py-1 rounded-full bg-primary/10 text-primary"
+                            >
+                              {theme}
+                            </span>
+                          ))}
+                        </div>
                         <div className="flex flex-wrap gap-2">
                           {entry.tags.map((tag) => (
                             <span

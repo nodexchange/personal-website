@@ -37,17 +37,13 @@ export function About() {
             </FadeIn>
 
             <FadeIn delay={0.1}>
-              <h2 className="mb-6">
-                From product surfaces to
-                <br />
-                investment infrastructure.
-              </h2>
+              <h2 className="mb-6">Product systems at scale</h2>
             </FadeIn>
 
             <FadeIn delay={0.2}>
               <div className="space-y-4 text-muted-foreground">
                 <p>
-                  I started my career building user interfaces &mdash; from
+                  I started my career building user interfaces, from
                   ad-creative front-ends at Verizon Media to microfrontend and
                   payment platform teams at Bottomline Technologies. That
                   foundation in UI architecture still shapes how I think about

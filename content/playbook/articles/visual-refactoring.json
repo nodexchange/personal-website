@@ -1,20 +1,40 @@
 {
   "number": "07",
+  "series": "Agentic Playbook",
   "slug": "visual-refactoring",
   "title": "Visual Refactoring",
   "subtitle": "Claude 4 + Playwright for UI Validation",
   "summary": "Combining Claude 4's reasoning with Playwright's visual testing to enable AI agents to validate UI changes during refactoring. Automates screenshot capture and comparison to detect regressions.",
+  "themes": [
+    "Quality & Safety",
+    "Practical Workflows"
+  ],
   "tags": [
     "Visual Testing",
     "Playwright",
     "Refactoring"
   ],
+  "difficulty": "Intermediate",
   "sourceUrl": "https://www.linkedin.com/posts/marcinwojtala_agenticplaybook-claude4-cursorai-activity-7336301655321202690-ejzA",
   "sourceType": "post",
   "readingTime": "3 min read",
+  "related": [
+    "visual-context",
+    "seamless-refactors",
+    "large-pr-problem"
+  ],
   "body": [
     "UI refactoring has a specific risk: the code may still compile while the product experience quietly regresses. Visual validation gives AI-assisted refactors a more concrete feedback loop.",
     "Pairing an agent with Playwright screenshots creates a practical check against layout breakage, missing states, and obvious rendering defects. It does not replace human judgment, but it catches a class of problems earlier.",
     "The pattern is useful because it makes quality visible to the agent. Instead of treating UI work as text-only code transformation, the workflow includes the rendered product surface as evidence."
+  ],
+  "sections": [
+    {
+      "content": [
+        "UI refactoring has a specific risk: the code may still compile while the product experience quietly regresses. Visual validation gives AI-assisted refactors a more concrete feedback loop.",
+        "Pairing an agent with Playwright screenshots creates a practical check against layout breakage, missing states, and obvious rendering defects. It does not replace human judgment, but it catches a class of problems earlier.",
+        "The pattern is useful because it makes quality visible to the agent. Instead of treating UI work as text-only code transformation, the workflow includes the rendered product surface as evidence."
+      ]
+    }
   ]
 }

@@ -49,7 +49,7 @@ export function LeadershipSnapshot() {
             <h2 className="mb-4">
               How I lead engineering
               <br />
-              at scale.
+              at scale
             </h2>
           </FadeIn>
           <FadeIn delay={0.2}>

@@ -20,7 +20,7 @@ export function Contact() {
             <h2 className="mb-6">
               Exploring Engineering Director
               <br />
-              opportunities.
+              opportunities
             </h2>
           </FadeIn>
 

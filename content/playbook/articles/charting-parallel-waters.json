@@ -1,20 +1,40 @@
 {
   "number": "08",
+  "series": "Agentic Playbook",
   "slug": "charting-parallel-waters",
   "title": "Charting Parallel Waters",
   "subtitle": "Multi-Agent Execution in Modern Dev Environments",
   "summary": "Addresses the limitation of single-agent sequential operation. Using Claude-Squad for concurrent multi-agent execution where developers can spin up multiple agents with defined scopes running in parallel.",
+  "themes": [
+    "Practical Workflows",
+    "Cloud & Platform Engineering"
+  ],
   "tags": [
     "Multi-Agent",
     "Parallel Execution",
     "Claude-Squad"
   ],
+  "difficulty": "Advanced",
   "sourceUrl": "https://www.linkedin.com/posts/marcinwojtala_claudesquad-multiagentflow-agenticplaybook-activity-7339195778516574209-Xz2d",
   "sourceType": "post",
   "readingTime": "3 min read",
+  "related": [
+    "dual-thread-development",
+    "the-rise-of-cloud-agents",
+    "incremental-enhancement-practice"
+  ],
   "body": [
     "Single-agent workflows are often sequential. Multi-agent execution introduces a different pattern: split work into bounded scopes, let agents progress independently, and bring the outputs back through human review.",
     "The important constraint is ownership. Parallel work only helps when each agent has a clear task, a limited write area, and an expected output that can be evaluated without ambiguity.",
     "Used well, multi-agent execution supports product engineering by reducing waiting time on exploration, verification, and routine changes while keeping the engineer responsible for integration."
+  ],
+  "sections": [
+    {
+      "content": [
+        "Single-agent workflows are often sequential. Multi-agent execution introduces a different pattern: split work into bounded scopes, let agents progress independently, and bring the outputs back through human review.",
+        "The important constraint is ownership. Parallel work only helps when each agent has a clear task, a limited write area, and an expected output that can be evaluated without ambiguity.",
+        "Used well, multi-agent execution supports product engineering by reducing waiting time on exploration, verification, and routine changes while keeping the engineer responsible for integration."
+      ]
+    }
   ]
 }

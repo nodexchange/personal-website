@@ -129,7 +129,7 @@ export default function WorkshopsPage() {
               <h1 className="mb-6 max-w-3xl">
                 Hands-on learning
                 <br />
-                for engineering teams.
+                for engineering teams
               </h1>
             </FadeIn>
 

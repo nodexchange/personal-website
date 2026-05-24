@@ -109,7 +109,7 @@ export default function SpeakingPage() {
               <h1 className="mb-6 max-w-3xl">
                 Sharing insights on
                 <br />
-                engineering excellence.
+                engineering excellence
               </h1>
             </FadeIn>
 

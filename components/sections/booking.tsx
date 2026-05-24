@@ -65,12 +65,12 @@ export function BookingSection({ initialService }: BookingSectionProps) {
         <div className="max-w-3xl mx-auto">
           <FadeIn>
             <p className="text-primary font-medium mb-4 tracking-wide">
-              Booking
+              Work With Me
             </p>
           </FadeIn>
 
           <FadeIn delay={0.1}>
-            <h1 className="mb-5">Book a call or share your brief.</h1>
+            <h1 className="mb-5">Start a conversation</h1>
           </FadeIn>
 
           <FadeIn delay={0.2}>

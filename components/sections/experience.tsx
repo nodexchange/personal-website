@@ -76,14 +76,14 @@ export function Experience() {
             <h2 className="mb-4">
               From ad-tech UIs to
               <br />
-              investment platforms.
+              investment platforms
             </h2>
           </FadeIn>
 
           <FadeIn delay={0.2}>
             <p className="text-muted-foreground max-w-2xl">
-              15+ years building software, product platforms, and engineering teams
-              &mdash; from front-end creative tooling at Verizon to
+              15+ years building software, product platforms, and engineering teams,
+              from front-end creative tooling at Verizon to
               business-critical portfolio systems at JPMorgan, with a
               consistently hands-on leadership style throughout.
             </p>

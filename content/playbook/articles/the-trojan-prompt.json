@@ -1,21 +1,40 @@
 {
   "number": "03",
+  "series": "Agentic Playbook",
   "slug": "the-trojan-prompt",
   "title": "The Trojan Prompt",
   "subtitle": "How We're Inviting the Threat In",
   "summary": "Prompt injection is an AI-era equivalent of SQL injection, with emerging security risks across hidden payloads, malicious extensions, and unverified third-party tools.",
+  "themes": [
+    "Quality & Safety"
+  ],
   "tags": [
     "Security",
     "Prompt Injection",
     "Risk"
   ],
+  "difficulty": "Intermediate",
   "sourceUrl": "https://www.linkedin.com/pulse/agentic-playbook-3-trojan-prompt-how-were-inviting-threat-wojtala-on23e/",
   "sourceType": "article",
   "publishedAt": "2025-05-08",
   "readingTime": "4 min read",
+  "related": [
+    "why-skills-outlive-models",
+    "visual-context",
+    "spec-driven-development"
+  ],
   "body": [
     "AI-assisted workflows introduce new trust boundaries. Prompt injection is dangerous because instructions can arrive through content the developer did not treat as executable: documents, pages, comments, or third-party material.",
     "The risk grows when agents can read, write, browse, or call tools. A hidden instruction can attempt to redirect behavior, leak information, or undermine the user's intended task.",
     "The mitigation is not panic. It is controlled tool access, source awareness, reviewable actions, and a security model that treats untrusted context as untrusted input."
+  ],
+  "sections": [
+    {
+      "content": [
+        "AI-assisted workflows introduce new trust boundaries. Prompt injection is dangerous because instructions can arrive through content the developer did not treat as executable: documents, pages, comments, or third-party material.",
+        "The risk grows when agents can read, write, browse, or call tools. A hidden instruction can attempt to redirect behavior, leak information, or undermine the user's intended task.",
+        "The mitigation is not panic. It is controlled tool access, source awareness, reviewable actions, and a security model that treats untrusted context as untrusted input."
+      ]
+    }
   ]
 }

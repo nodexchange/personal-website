@@ -231,14 +231,14 @@ export default function StackPage() {
 
             <FadeIn delay={0.1}>
               <h1 className="mb-6 max-w-3xl">
-                Tools of the trade.
+                Tools of the trade
               </h1>
             </FadeIn>
 
             <FadeIn delay={0.2}>
               <p className="text-xl text-muted-foreground mb-10 max-w-2xl">
                 Enterprise technologies for building high-performance financial
-                platforms &mdash; from distributed caching and event-driven
+                platforms, from distributed caching and event-driven
                 architectures to cloud-native infrastructure at global scale.
               </p>
             </FadeIn>

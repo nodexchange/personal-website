@@ -1,21 +1,42 @@
 {
   "number": "12",
+  "series": "Agentic Playbook",
   "slug": "why-skills-outlive-models",
   "title": "Why Skills Outlive Models",
   "subtitle": "From Prompt Engineering to Reusable Agent Capabilities",
   "summary": "While AI models constantly evolve, the lasting competitive advantage lies in developing structured Agent Skills: reusable capability modules that embed domain knowledge, best practices, and organizational standards.",
+  "themes": [
+    "Architecture & Systems Thinking",
+    "Engineering Leadership in the AI Era",
+    "Quality & Safety"
+  ],
   "tags": [
     "Agent Skills",
     "Architecture",
     "Engineering Leadership"
   ],
+  "difficulty": "Advanced",
   "sourceUrl": "https://www.linkedin.com/pulse/agentic-playbook-12-why-skills-outlive-models-marcin-wojtala-nzb0e",
   "sourceType": "article",
   "publishedAt": "2026-01-24",
   "readingTime": "4 min read",
+  "related": [
+    "spec-driven-development",
+    "the-trojan-prompt",
+    "the-rise-of-cloud-agents"
+  ],
   "body": [
     "Models will keep changing. That makes model-specific prompting a weak foundation for enterprise capability. The more durable asset is the knowledge a team packages around the model: standards, domain context, review habits, and repeatable workflows.",
     "Agent skills turn that knowledge into reusable operating material. They help teams move from one-off prompting toward capabilities that can be versioned, improved, and taught across an organization.",
     "For leaders, this matters because the advantage is not just access to a stronger model. It is the ability to encode engineering judgment so teams can use AI in a way that remains consistent as the tooling evolves."
+  ],
+  "sections": [
+    {
+      "content": [
+        "Models will keep changing. That makes model-specific prompting a weak foundation for enterprise capability. The more durable asset is the knowledge a team packages around the model: standards, domain context, review habits, and repeatable workflows.",
+        "Agent skills turn that knowledge into reusable operating material. They help teams move from one-off prompting toward capabilities that can be versioned, improved, and taught across an organization.",
+        "For leaders, this matters because the advantage is not just access to a stronger model. It is the ability to encode engineering judgment so teams can use AI in a way that remains consistent as the tooling evolves."
+      ]
+    }
   ]
 }

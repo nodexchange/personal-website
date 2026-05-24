@@ -64,7 +64,7 @@ export function Hero() {
               <br />
               product engineering,
               <br />
-              and safe AI delivery.
+              and safe AI delivery
             </h1>
 
             <p className="text-base text-muted-foreground mb-5 max-w-xl leading-relaxed">
@@ -75,9 +75,9 @@ export function Hero() {
               I lead regulated software delivery across Asset Management
               investment platforms, combining hands-on technical judgment with
               product engineering, global team leadership, and resilient
-              operating models. Today I lead multi-asset portfolio management
-              systems at JPMorgan Chase, supporting $438B+ in assets under
-              management across global, high-volume platforms.
+              operating models. My current remit spans multi-asset portfolio
+              management systems at JPMorgan Chase, supporting $438B+ in assets
+              under management across global, high-volume platforms.
             </p>
 
             <p className="text-sm text-muted-foreground mb-6 max-w-2xl">

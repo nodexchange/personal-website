@@ -1,21 +1,41 @@
 {
   "number": "10",
+  "series": "Agentic Playbook",
   "slug": "dual-thread-development",
   "title": "Dual-Thread Development (DTD)",
   "subtitle": "Splitting Workflow for Focus and Delegation",
   "summary": "A methodology for managing AI-assisted development by separating intentional focus work from asynchronous agent tasks. Reduces context-switching costs and protects developer focus.",
+  "themes": [
+    "Practical Workflows",
+    "Engineering Leadership in the AI Era"
+  ],
   "tags": [
     "Workflow",
     "Productivity",
     "Methodology"
   ],
+  "difficulty": "Intermediate",
   "sourceUrl": "https://www.linkedin.com/pulse/agentic-playbook-10-dual-thread-development-dtd-marcin-wojtala-nhvbe/",
   "sourceType": "article",
   "publishedAt": "2025-07-10",
   "readingTime": "3 min read",
+  "related": [
+    "charting-parallel-waters",
+    "the-rise-of-cloud-agents",
+    "incremental-enhancement-practice"
+  ],
   "body": [
     "AI tools make it easy to start multiple lines of work. Without structure, that can create more context switching rather than less. Dual-thread development separates the engineer's focus thread from delegated agent work.",
     "The focus thread is where the engineer makes core decisions, reviews tradeoffs, and protects quality. The agent thread handles bounded tasks that can run in parallel without blocking immediate reasoning.",
     "The point is not to maximize agent activity. It is to preserve attention while still using agents to increase throughput on well-scoped supporting work."
+  ],
+  "sections": [
+    {
+      "content": [
+        "AI tools make it easy to start multiple lines of work. Without structure, that can create more context switching rather than less. Dual-thread development separates the engineer's focus thread from delegated agent work.",
+        "The focus thread is where the engineer makes core decisions, reviews tradeoffs, and protects quality. The agent thread handles bounded tasks that can run in parallel without blocking immediate reasoning.",
+        "The point is not to maximize agent activity. It is to preserve attention while still using agents to increase throughput on well-scoped supporting work."
+      ]
+    }
   ]
 }

@@ -1,21 +1,41 @@
 {
   "number": "13",
+  "series": "Agentic Playbook",
   "slug": "the-rise-of-cloud-agents",
   "title": "The Rise of Cloud Agents",
   "subtitle": "How Intelligent Agents Are Moving from IDE to Infrastructure",
   "summary": "Cloud-native agents are shifting AI-assisted development from local coding tools into scalable platform workflows. This marks a transition from individual productivity boosts to enterprise-grade orchestration, governance, and delivery acceleration.",
+  "themes": [
+    "Cloud & Platform Engineering",
+    "Engineering Leadership in the AI Era"
+  ],
   "tags": [
     "Cloud Agents",
     "Platform Engineering",
     "AI Strategy"
   ],
+  "difficulty": "Advanced",
   "sourceUrl": "https://www.linkedin.com/pulse/agentic-playbook-13-rise-cloud-agents-marcin-wojtala-3fnse",
   "sourceType": "article",
   "publishedAt": "2026-03-05",
   "readingTime": "4 min read",
+  "related": [
+    "dual-thread-development",
+    "charting-parallel-waters",
+    "why-skills-outlive-models"
+  ],
   "body": [
     "AI-assisted development is moving beyond the local editor. Cloud agents change the operating model because they can run in managed environments, work asynchronously, and participate in platform workflows rather than only individual coding sessions.",
     "That shift creates new engineering questions. Teams need to think about permissions, auditability, environment isolation, secrets, review boundaries, and how agent output flows through normal delivery controls.",
     "The opportunity is significant, but it belongs in platform engineering, not informal experimentation. Cloud agents should improve throughput while making governance and operational control more explicit."
+  ],
+  "sections": [
+    {
+      "content": [
+        "AI-assisted development is moving beyond the local editor. Cloud agents change the operating model because they can run in managed environments, work asynchronously, and participate in platform workflows rather than only individual coding sessions.",
+        "That shift creates new engineering questions. Teams need to think about permissions, auditability, environment isolation, secrets, review boundaries, and how agent output flows through normal delivery controls.",
+        "The opportunity is significant, but it belongs in platform engineering, not informal experimentation. Cloud agents should improve throughput while making governance and operational control more explicit."
+      ]
+    }
   ]
 }

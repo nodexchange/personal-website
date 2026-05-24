@@ -5,6 +5,7 @@ import cuttingTheRoots from "@/content/playbook/articles/cutting-the-roots.json"
 import dontLetTheToolThinkForYou from "@/content/playbook/articles/dont-let-the-tool-think-for-you.json";
 import dualThreadDevelopment from "@/content/playbook/articles/dual-thread-development.json";
 import incrementalEnhancementPractice from "@/content/playbook/articles/incremental-enhancement-practice.json";
+import largePrProblem from "@/content/playbook/articles/large-pr-problem.json";
 import learnANewLanguage from "@/content/playbook/articles/learn-a-new-language.json";
 import seamlessRefactors from "@/content/playbook/articles/seamless-refactors.json";
 import specDrivenDevelopment from "@/content/playbook/articles/spec-driven-development.json";
@@ -16,17 +17,28 @@ import whySkillsOutliveModels from "@/content/playbook/articles/why-skills-outli
 
 export type PlaybookEntry = {
   number: string;
+  series: string;
   slug: string;
   title: string;
-  subtitle: string;
+  subtitle?: string;
   summary: string;
+  themes: string[];
   tags: string[];
-  sourceUrl: string;
-  sourceType: "article" | "post";
+  difficulty?: "Beginner" | "Intermediate" | "Advanced" | "Leadership";
+  sourceUrl?: string;
+  sourceType?: "article" | "post" | "essay" | "note";
   isNew?: boolean;
   publishedAt?: string;
-  readingTime: string;
-  body: string[];
+  readingTime?: string;
+  coverImage?: string;
+  related?: string[];
+  body?: string[];
+  sections?: PlaybookArticleSection[];
+};
+
+export type PlaybookArticleSection = {
+  heading?: string;
+  content: string[];
 };
 
 export type PlaybookTheme = {
@@ -35,6 +47,7 @@ export type PlaybookTheme = {
 };
 
 const rawPlaybookArticleData = [
+  largePrProblem,
   specDrivenDevelopment,
   theRiseOfCloudAgents,
   whySkillsOutliveModels,
@@ -52,7 +65,10 @@ const rawPlaybookArticleData = [
 ] as const;
 
 function toPlaybookEntry(entry: (typeof rawPlaybookArticleData)[number]) {
-  if (entry.sourceType !== "article" && entry.sourceType !== "post") {
+  if (
+    entry.sourceType &&
+    !["article", "post", "essay", "note"].includes(entry.sourceType)
+  ) {
     throw new Error(`Invalid Playbook sourceType for ${entry.slug}`);
   }
 
@@ -69,6 +85,42 @@ export const playbookThemes = themes as PlaybookTheme[];
 
 export function getPlaybookEntry(slug: string) {
   return playbookEntries.find((entry) => entry.slug === slug);
+}
+
+export function getRelatedPlaybookEntries(entry: PlaybookEntry) {
+  return (entry.related ?? [])
+    .map((slug) => getPlaybookEntry(slug))
+    .filter((relatedEntry): relatedEntry is PlaybookEntry => Boolean(relatedEntry));
+}
+
+export function getAdjacentPlaybookEntries(entry: PlaybookEntry) {
+  const currentNumber = Number(entry.number);
+  const orderedAscending = [...playbookEntries].sort(
+    (a, b) => Number(a.number) - Number(b.number)
+  );
+  const currentIndex = orderedAscending.findIndex(
+    (item) => Number(item.number) === currentNumber
+  );
+
+  return {
+    previous: currentIndex > 0 ? orderedAscending[currentIndex - 1] : undefined,
+    next:
+      currentIndex >= 0 && currentIndex < orderedAscending.length - 1
+        ? orderedAscending[currentIndex + 1]
+        : undefined,
+  };
+}
+
+export function getPlaybookArticleSections(entry: PlaybookEntry) {
+  if (entry.sections?.length) {
+    return entry.sections;
+  }
+
+  return [
+    {
+      content: entry.body ?? [],
+    },
+  ];
 }
 
 export function getPlaybookPath(entry: PlaybookEntry) {

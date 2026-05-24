@@ -5,7 +5,7 @@
   },
   {
     "title": "Quality & Safety",
-    "description": "Security risks, testing strategies, and code quality in AI-assisted codebases."
+    "description": "Security risks, reviewability, testing strategies, and code quality in AI-assisted codebases."
   },
   {
     "title": "Talent & Cognitive Health",
@@ -14,5 +14,13 @@
   {
     "title": "Practical Workflows",
     "description": "Real-world patterns for integrating AI tools effectively: DTD, visual context, and multi-agent execution."
+  },
+  {
+    "title": "Architecture & Systems Thinking",
+    "description": "Specifications, design review, threat models, and system-level reasoning for AI-assisted delivery."
+  },
+  {
+    "title": "Cloud & Platform Engineering",
+    "description": "Cloud agents, platform workflows, governance, and scalable AI-assisted engineering operations."
   }
 ]

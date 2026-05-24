@@ -1,20 +1,39 @@
 {
   "number": "04",
+  "series": "Agentic Playbook",
   "slug": "visual-context",
   "title": "Visual Context",
   "subtitle": "Enhancing AI Guidance with Screenshots and Diagrams",
   "summary": "Provide screenshots, wireframes, and architecture diagrams to help AI agents better understand structure and intent.",
+  "themes": [
+    "Practical Workflows"
+  ],
   "tags": [
     "Visual Input",
     "Context",
     "Productivity"
   ],
+  "difficulty": "Beginner",
   "sourceUrl": "https://www.linkedin.com/posts/marcinwojtala_agenticplaybook-aiindev-machinevision-activity-7328170976880332800-Afvg",
   "sourceType": "post",
   "readingTime": "2 min read",
+  "related": [
+    "visual-refactoring",
+    "celestial-crosscheck",
+    "incremental-enhancement-practice"
+  ],
   "body": [
     "Code is not always enough context. For UI work, architecture discussions, and product flows, visual material can carry information that would be expensive or ambiguous to describe in prose.",
     "Screenshots, diagrams, and wireframes help agents understand intent, not just implementation. They reduce guesswork around layout, relationships, and user-facing behavior.",
     "The pattern is practical: provide visual context early, ask the agent to restate what it sees, then use that shared understanding to guide implementation or review."
+  ],
+  "sections": [
+    {
+      "content": [
+        "Code is not always enough context. For UI work, architecture discussions, and product flows, visual material can carry information that would be expensive or ambiguous to describe in prose.",
+        "Screenshots, diagrams, and wireframes help agents understand intent, not just implementation. They reduce guesswork around layout, relationships, and user-facing behavior.",
+        "The pattern is practical: provide visual context early, ask the agent to restate what it sees, then use that shared understanding to guide implementation or review."
+      ]
+    }
   ]
 }

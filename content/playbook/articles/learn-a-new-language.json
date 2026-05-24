@@ -1,20 +1,40 @@
 {
   "number": "02",
+  "series": "Agentic Playbook",
   "slug": "learn-a-new-language",
   "title": "Learn a New Language",
   "subtitle": "Through Your Own Codebase",
   "summary": "Using Cursor AI to learn Java by contextualizing instruction within an existing TypeScript monorepo. The agent teaches through contrasts, creating a personalised, hands-on learning path anchored in real experience.",
+  "themes": [
+    "Practical Workflows",
+    "Talent & Cognitive Health"
+  ],
   "tags": [
     "Learning",
     "Language Migration",
     "Cursor AI"
   ],
+  "difficulty": "Beginner",
   "sourceUrl": "https://www.linkedin.com/posts/marcinwojtala_agenticplaybook-aiindev-cursorai-activity-7320516588749639682-59S3",
   "sourceType": "post",
   "readingTime": "2 min read",
+  "related": [
+    "dont-let-the-tool-think-for-you",
+    "visual-context",
+    "why-skills-outlive-models"
+  ],
   "body": [
     "AI can make language learning more relevant by anchoring explanations in code the developer already understands. Instead of generic tutorials, the tool can compare familiar patterns with unfamiliar syntax and ecosystem conventions.",
     "That is useful for engineers moving across stacks because it shortens the gap between abstract learning and practical contribution.",
     "The strongest workflow asks the agent to teach through contrast: show the equivalent concept, explain what changes, and point out where assumptions from the old stack no longer apply."
+  ],
+  "sections": [
+    {
+      "content": [
+        "AI can make language learning more relevant by anchoring explanations in code the developer already understands. Instead of generic tutorials, the tool can compare familiar patterns with unfamiliar syntax and ecosystem conventions.",
+        "That is useful for engineers moving across stacks because it shortens the gap between abstract learning and practical contribution.",
+        "The strongest workflow asks the agent to teach through contrast: show the equivalent concept, explain what changes, and point out where assumptions from the old stack no longer apply."
+      ]
+    }
   ]
 }

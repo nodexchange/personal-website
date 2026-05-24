@@ -82,7 +82,7 @@ export default function MentorshipPage() {
               <h1 className="mb-6 max-w-3xl">
                 Helping engineers
                 <br />
-                reach the next level.
+                reach the next level
               </h1>
             </FadeIn>
 
