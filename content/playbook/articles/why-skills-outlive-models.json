@@ -20,6 +20,7 @@
   "sourceType": "article",
   "publishedAt": "2026-01-24",
   "readingTime": "4 min read",
+  "coverImage": "/images/articles/why-skills-outlive-models.png",
   "related": [
     "spec-driven-development",
     "the-trojan-prompt",

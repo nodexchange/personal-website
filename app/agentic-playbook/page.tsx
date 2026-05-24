@@ -1,27 +1,25 @@
 import Link from "next/link";
 import { Linkedin } from "lucide-react";
 import { Header, Footer, Container } from "@/components/layout";
+import {
+  PlaybookEntryGrid,
+  type PlaybookCardEntry,
+} from "@/components/playbook/playbook-entry-grid";
 import { Button } from "@/components/ui/button";
 import { FadeIn } from "@/components/ui/fade-in";
 import {
-  Card,
-  CardContent,
-  CardDescription,
-  CardHeader,
-  CardTitle,
-} from "@/components/ui/card";
-import {
-  formatPlaybookDate,
   getPlaybookPath,
   playbookEntries,
   playbookThemes,
 } from "@/lib/playbook";
+import { createPageMetadata } from "@/lib/seo";
 
-export const metadata = {
+export const metadata = createPageMetadata({
   title: "The Agentic Playbook | Marcin Wojtala",
   description:
     "First-party essays on AI-assisted development, agentic engineering, product engineering workflows, quality, safety, and engineering leadership.",
-};
+  path: "/agentic-playbook",
+});
 
 const blogStructuredData = {
   "@context": "https://schema.org",
@@ -43,6 +41,22 @@ const blogStructuredData = {
     datePublished: entry.publishedAt,
   })),
 };
+
+const playbookCardEntries: PlaybookCardEntry[] = playbookEntries.map((entry) => ({
+  number: entry.number,
+  series: entry.series,
+  slug: entry.slug,
+  title: entry.title,
+  subtitle: entry.subtitle,
+  summary: entry.summary,
+  themes: entry.themes,
+  tags: entry.tags,
+  difficulty: entry.difficulty,
+  isNew: entry.isNew,
+  publishedAt: entry.publishedAt,
+  readingTime: entry.readingTime,
+  coverImage: entry.coverImage,
+}));
 
 export default function AgenticPlaybookPage() {
   return (
@@ -134,85 +148,10 @@ export default function AgenticPlaybookPage() {
               </p>
             </FadeIn>
 
-            <div className="grid gap-6 lg:grid-cols-2">
-              {playbookEntries.map((entry, index) => (
-                <FadeIn key={entry.number} delay={0.03 + index * 0.03}>
-                  <Link href={getPlaybookPath(entry)} className="block group">
-                    <Card
-                      className={`h-full transition-all duration-200 group-hover:border-primary/30 group-hover:bg-card/80 ${
-                        entry.isNew ? "border-primary/30 border-2" : "border-border/50"
-                      }`}
-                    >
-                      <CardHeader>
-                        <div className="flex items-start gap-4">
-                          <span className="text-4xl font-bold text-primary/20 group-hover:text-primary/40 transition-colors">
-                            #{entry.number}
-                          </span>
-                          <div className="flex-1">
-                            <div className="flex flex-wrap items-center gap-2 mb-1">
-                              <CardTitle className="text-lg group-hover:text-primary transition-colors">
-                                {entry.title}
-                              </CardTitle>
-                              {entry.isNew && (
-                                <span className="text-xs font-medium bg-primary text-primary-foreground px-2.5 py-1 rounded-full">
-                                  New
-                                </span>
-                              )}
-                              <span className="text-xs text-muted-foreground bg-secondary px-2 py-0.5 rounded">
-                                {entry.series}
-                              </span>
-                              {entry.difficulty ? (
-                                <span className="text-xs text-muted-foreground bg-secondary px-2 py-0.5 rounded">
-                                  {entry.difficulty}
-                                </span>
-                              ) : null}
-                              {entry.publishedAt ? (
-                                <span className="text-xs text-muted-foreground">
-                                  {formatPlaybookDate(entry.publishedAt)}
-                                </span>
-                              ) : null}
-                              {entry.readingTime ? (
-                                <span className="text-xs text-muted-foreground">
-                                  {entry.readingTime}
-                                </span>
-                              ) : null}
-                            </div>
-                            <CardDescription className="text-primary/70">
-                              {entry.subtitle}
-                            </CardDescription>
-                          </div>
-                        </div>
-                      </CardHeader>
-                      <CardContent>
-                        <p className="text-muted-foreground mb-4 text-sm">
-                          {entry.summary}
-                        </p>
-                        <div className="flex flex-wrap gap-2 mb-3">
-                          {entry.themes.map((theme) => (
-                            <span
-                              key={theme}
-                              className="text-xs px-2 py-1 rounded-full bg-primary/10 text-primary"
-                            >
-                              {theme}
-                            </span>
-                          ))}
-                        </div>
-                        <div className="flex flex-wrap gap-2">
-                          {entry.tags.map((tag) => (
-                            <span
-                              key={tag}
-                              className="text-xs px-2 py-1 rounded-full bg-secondary text-secondary-foreground"
-                            >
-                              {tag}
-                            </span>
-                          ))}
-                        </div>
-                      </CardContent>
-                    </Card>
-                  </Link>
-                </FadeIn>
-              ))}
-            </div>
+            <PlaybookEntryGrid
+              entries={playbookCardEntries}
+              themes={playbookThemes}
+            />
           </Container>
         </section>
 

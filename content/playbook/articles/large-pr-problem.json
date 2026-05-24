@@ -23,6 +23,7 @@
   "sourceType": "article",
   "publishedAt": "2026-05-22",
   "readingTime": "5 min read",
+  "coverImage": "/images/articles/large-pr-problem.png",
   "related": [
     "spec-driven-development",
     "dont-let-the-tool-think-for-you",

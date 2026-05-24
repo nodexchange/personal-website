@@ -7,12 +7,14 @@ import {
   CardHeader,
   CardTitle,
 } from "@/components/ui/card";
+import { createPageMetadata } from "@/lib/seo";
 
-export const metadata = {
-  title: "Stack | Marcin Wojtala",
+export const metadata = createPageMetadata({
+  title: "Engineering Stack | Marcin Wojtala",
   description:
-    "Enterprise technologies for building high-performance, low-latency financial platforms at scale.",
-};
+    "Enterprise engineering stack for regulated investment platforms, low-latency financial systems, DevSecOps, cloud infrastructure, and AI-assisted development.",
+  path: "/stack",
+});
 
 const stackCategories = [
   {

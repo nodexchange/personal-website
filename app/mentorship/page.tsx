@@ -10,12 +10,14 @@ import {
   CardHeader,
   CardTitle,
 } from "@/components/ui/card";
+import { createPageMetadata } from "@/lib/seo";
 
-export const metadata = {
-  title: "Mentorship | Marcin Wojtala",
+export const metadata = createPageMetadata({
+  title: "Engineering Mentorship | Marcin Wojtala",
   description:
-    "Hands-on engineering mentorship for developers and leaders growing technical depth, leadership judgment, and delivery impact.",
-};
+    "Hands-on mentorship for engineering managers, senior engineers, and product engineering leaders growing technical judgment, team leadership, and delivery impact.",
+  path: "/mentorship",
+});
 
 const mentorshipAreas = [
   {

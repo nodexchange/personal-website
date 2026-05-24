@@ -19,6 +19,7 @@
   "sourceType": "article",
   "publishedAt": "2025-07-10",
   "readingTime": "3 min read",
+  "coverImage": "/images/articles/dual-thread-development.png",
   "related": [
     "charting-parallel-waters",
     "the-rise-of-cloud-agents",

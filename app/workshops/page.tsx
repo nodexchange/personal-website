@@ -10,12 +10,14 @@ import {
   CardHeader,
   CardTitle,
 } from "@/components/ui/card";
+import { createPageMetadata } from "@/lib/seo";
 
-export const metadata = {
-  title: "Workshops | Marcin Wojtala",
+export const metadata = createPageMetadata({
+  title: "Agentic Engineering Workshops | Marcin Wojtala",
   description:
-    "Hands-on workshops on engineering leadership, quality engineering, chaos engineering, and team building.",
-};
+    "Hands-on workshops for engineering teams adopting AI-assisted delivery, quality controls, DevSecOps practices, and resilient product engineering workflows.",
+  path: "/workshops",
+});
 
 const workshops = [
   {
