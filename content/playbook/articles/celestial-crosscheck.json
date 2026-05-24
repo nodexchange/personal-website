@@ -1,0 +1,20 @@
+{
+  "number": "05",
+  "slug": "celestial-crosscheck",
+  "title": "Celestial Crosscheck",
+  "subtitle": "Pause Before Execution, Challenge Assumptions",
+  "summary": "Before requesting code generation, ask AI to challenge your design decisions, identify edge cases, and suggest alternatives. Making Celestial Crosscheck a habitual first prompt.",
+  "tags": [
+    "Architecture",
+    "Design Review",
+    "Best Practices"
+  ],
+  "sourceUrl": "https://www.linkedin.com/posts/marcinwojtala_agenticplaybook-celestialcrosscheck-aiindev-activity-7330659845018185729-NJC5",
+  "sourceType": "post",
+  "readingTime": "2 min read",
+  "body": [
+    "A useful AI workflow often starts before implementation. Asking the tool to challenge the plan can expose missing cases, weak assumptions, and cheaper alternatives before code exists.",
+    "This is especially valuable when the engineer already has momentum. The pause creates a lightweight design review that can prevent avoidable rework.",
+    "The habit is simple: before execution, ask for risks, contradictions, edge cases, and competing designs. Then decide deliberately what to keep."
+  ]
+}

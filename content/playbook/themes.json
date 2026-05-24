@@ -1,0 +1,18 @@
+[
+  {
+    "title": "Engineering Leadership in the AI Era",
+    "description": "How to lead engineering teams when AI changes the shape of development work."
+  },
+  {
+    "title": "Quality & Safety",
+    "description": "Security risks, testing strategies, and code quality in AI-assisted codebases."
+  },
+  {
+    "title": "Talent & Cognitive Health",
+    "description": "Preserving critical thinking, developing junior engineers, and avoiding over-reliance."
+  },
+  {
+    "title": "Practical Workflows",
+    "description": "Real-world patterns for integrating AI tools effectively: DTD, visual context, and multi-agent execution."
+  }
+]

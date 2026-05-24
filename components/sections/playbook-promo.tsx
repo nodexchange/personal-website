@@ -2,6 +2,9 @@ import Link from "next/link";
 import { Button } from "@/components/ui/button";
 import { Container } from "@/components/layout/container";
 import { FadeIn } from "@/components/ui/fade-in";
+import { getPlaybookPath, playbookEntries } from "@/lib/playbook";
+
+const latestEntry = playbookEntries[0];
 
 export function PlaybookPromo() {
   return (
@@ -18,20 +21,18 @@ export function PlaybookPromo() {
                   The Agentic Playbook
                 </h3>
                 <p className="text-muted-foreground">
-                  Explore my ongoing series on AI-assisted development - practical
-                  insights on workflows, team dynamics, and the future of
-                  engineering in the age of agentic tools.
+                  Explore my ongoing series on AI-assisted development,
+                  product engineering workflows, quality controls, and the
+                  operating model needed for safe agentic adoption.
                 </p>
                 <p className="mt-3 text-sm text-muted-foreground">
                   Latest:
                   {" "}
                   <Link
-                    href="https://www.linkedin.com/pulse/agentic-playbook-14-spec-driven-development-marcin-wojtala-yimwe/"
-                    target="_blank"
-                    rel="noopener noreferrer"
+                    href={getPlaybookPath(latestEntry)}
                     className="text-primary hover:underline"
                   >
-                    Agentic Playbook #14 - Spec-Driven Development
+                    Agentic Playbook #{latestEntry.number} - {latestEntry.title}
                   </Link>
                 </p>
               </div>

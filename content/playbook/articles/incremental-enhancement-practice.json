@@ -1,0 +1,20 @@
+{
+  "number": "01",
+  "slug": "incremental-enhancement-practice",
+  "title": "Incremental Enhancement Practice",
+  "subtitle": "Phased Approach to AI-Assisted Development",
+  "summary": "Break work into structured stages with verification points rather than requesting complete solutions in single prompts. This reduces hallucinations and code breakage through collaboration over speed.",
+  "tags": [
+    "Methodology",
+    "Best Practices",
+    "Quality"
+  ],
+  "sourceUrl": "https://www.linkedin.com/posts/marcinwojtala_agenticplaybook-aiindev-agentops-activity-7317923860861906944-s3lr",
+  "sourceType": "post",
+  "readingTime": "3 min read",
+  "body": [
+    "The first principle of effective AI-assisted development is not speed. It is control. Large prompts that ask for complete solutions make it harder to inspect assumptions, isolate errors, and preserve design intent.",
+    "Incremental enhancement breaks work into phases: understand, propose, implement, verify, and refine. Each step gives the engineer a chance to steer the tool and catch drift.",
+    "This workflow is slower than a single prompt in the first minute and faster over the full delivery cycle because it reduces rework, hallucinated behavior, and unreviewable changes."
+  ]
+}

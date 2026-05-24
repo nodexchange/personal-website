@@ -1,0 +1,21 @@
+{
+  "number": "09",
+  "slug": "dont-let-the-tool-think-for-you",
+  "title": "Don't Let the Tool Think for You",
+  "subtitle": "Preserving Critical Thinking in AI-Assisted Development",
+  "summary": "As AI coding assistants become more powerful, developers risk automating their thinking along with their code. Reduced mental friction can erode deep problem-solving abilities and architectural reasoning.",
+  "tags": [
+    "Critical Thinking",
+    "Cognitive Risk",
+    "Best Practices"
+  ],
+  "sourceUrl": "https://www.linkedin.com/pulse/agentic-playbook-9-dont-let-tool-think-you-marcin-wojtala-lctoe/",
+  "sourceType": "article",
+  "publishedAt": "2025-06-25",
+  "readingTime": "3 min read",
+  "body": [
+    "AI can remove useful friction. That is the risk. Some friction is waste, but some of it is where engineers build understanding: tracing behavior, comparing designs, testing assumptions, and forming a mental model.",
+    "If the tool starts making too many decisions invisibly, developers can ship output without owning the reasoning behind it. That creates fragility in review, debugging, and production support.",
+    "The practical standard is simple: use the tool to accelerate work, but keep responsibility for the thinking. Ask it to challenge assumptions, expose alternatives, and explain tradeoffs before accepting implementation."
+  ]
+}

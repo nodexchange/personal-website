@@ -1,0 +1,22 @@
+{
+  "number": "14",
+  "slug": "spec-driven-development",
+  "title": "Spec-Driven Development",
+  "subtitle": "Why Prompt-First Development Does Not Scale",
+  "summary": "AI is strong at generating code but far less reliable at inventing constraints. The leverage shifts from prompting faster to defining systems clearly enough that they can be challenged, refined, and built correctly.",
+  "tags": [
+    "Specifications",
+    "System Design",
+    "AI Workflow"
+  ],
+  "sourceUrl": "https://www.linkedin.com/pulse/agentic-playbook-14-spec-driven-development-marcin-wojtala-yimwe/",
+  "sourceType": "article",
+  "isNew": true,
+  "publishedAt": "2026-04-17",
+  "readingTime": "4 min read",
+  "body": [
+    "Prompt-first development works when the task is small, familiar, and bounded. It starts to fail when the important work is not code generation, but deciding what the system must preserve, reject, expose, and guarantee.",
+    "Spec-driven development moves the leverage point earlier. Instead of asking an AI tool to infer constraints from a loose instruction, the engineer defines the shape of the problem: domain rules, non-goals, edge cases, quality bars, acceptance criteria, and failure modes.",
+    "The practical result is not slower delivery. It is safer acceleration. Better specifications give agents something concrete to challenge, implement, and verify against, which makes the workflow more useful for real product engineering teams."
+  ]
+}

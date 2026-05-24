@@ -1,0 +1,21 @@
+{
+  "number": "11",
+  "slug": "cutting-the-roots",
+  "title": "Cutting the Roots",
+  "subtitle": "Why Eliminating Junior Developers Is a Strategic Mistake",
+  "summary": "While AI can handle entry-level tasks, removing junior developers undermines succession planning. The better path is augmented juniors, where AI serves as a learning tool and mentor rather than a replacement.",
+  "tags": [
+    "Talent",
+    "AI Impact",
+    "Team Building"
+  ],
+  "sourceUrl": "https://www.linkedin.com/pulse/agentic-playbook-11-cutting-roots-why-eliminating-junior-wojtala-l2pbe/",
+  "sourceType": "article",
+  "publishedAt": "2025-10-19",
+  "readingTime": "4 min read",
+  "body": [
+    "If organizations remove junior roles because AI can handle simple tasks, they also remove the apprenticeship path that produces senior engineers, tech leads, and future engineering managers.",
+    "The issue is not whether AI can accelerate entry-level work. It can. The issue is whether teams still create enough structured learning, feedback, and responsibility for engineers to build judgment.",
+    "A healthier model is the augmented junior: an engineer who uses AI to learn faster, compare approaches, ask better questions, and receive tighter feedback while still being held to real engineering standards."
+  ]
+}

@@ -1,0 +1,20 @@
+{
+  "number": "06",
+  "slug": "seamless-refactors",
+  "title": "Seamless Refactors",
+  "subtitle": "Claude 4 in Red-Green-Refactor",
+  "summary": "How Claude 4 transforms refactoring through incremental, test-driven improvements. AI's real value lies in guiding intelligent architectural adjustments while maintaining safety through comprehensive testing.",
+  "tags": [
+    "Refactoring",
+    "TDD",
+    "Claude 4"
+  ],
+  "sourceUrl": "https://www.linkedin.com/posts/marcinwojtala_agenticplaybook-claude4-cursorai-activity-7333710107937038336-dvYA",
+  "sourceType": "post",
+  "readingTime": "3 min read",
+  "body": [
+    "AI changes the economics of refactoring, but it does not remove the need for discipline. The safest pattern remains incremental change, tight feedback, and tests that define expected behavior.",
+    "In a red-green-refactor loop, an agent can help propose smaller transformations, identify duplication, and suggest architectural improvements while tests constrain the acceptable outcome.",
+    "The value is not a large speculative rewrite. The value is faster, better-supported refactoring where each step remains reviewable and reversible."
+  ]
+}
